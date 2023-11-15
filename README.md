@@ -58,7 +58,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
  
-  Test met kleurenbril #0779P
+Test met kleurenbril #0779P
 - De kleuren van de kleding zijn heel anders, paars lijkt grijs.
 - Alles is duidelijk te zien behalve de kleuren.
 - De teksten zijn duidelijk leesbaar
@@ -69,6 +69,13 @@ Test met combined loss diabetic eye disease bril
 - Plaatjes zijn redelijk goed te zien.
 - Lastig om details te zien.
 - Ze moet haar hoofd steeds draaien om de content goed te kunnen zien.
+
+Screenreader test: 
+- Bij dames pagina van heading level 1 naar 3 naar 2, geen logische structuur
+- Bij dames pagina staat niet beschreven wat link van www.c-a.com/foryou is
+- Bij links nu ontdekken en nu shoppen, weet je niet waar je naartoe wordt geleid.
+- Er wordt te veel informatie opgelezen bij andere productlinks op detailpagina.
+- Koppeling wordt vaak meerdere keren opgelezen
 </details>
 
 
