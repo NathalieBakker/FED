@@ -89,10 +89,10 @@ Screenreader test:
   <img src="readme-images/breakdown_damespagina.png" width="375px" alt="breakdown van de hele pagina">
   <img src="readme-images/breakdown_detailpagina.png" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
+  ### dynamisch deel slideshow: 
   <img src="readme-images/breakdown_slideshow.png" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
+  ### dynamisch deel uitklapmenu: 
   <img src="readme-images/breakdown_maten.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
