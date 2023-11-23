@@ -108,16 +108,16 @@ Screenreader test:
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  De oefening met het hamburgermenu was lastig.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Nathalie                       | Sosan                  | Fouzia                         | student 4        |
+  | Hamburgermenu bespreken        | HTML laten checken     | Toegankelijkheid bespreken     | ---              |
+  | HTML structuur laten checken   | en dit                 |                                | en dan ik dat    |
+  | en dat ook nog                 | dit als er tijd is     | nog een punt                   | dit wil ik zeker |
+  | ...                            | ...                    | ...                            | ...              |
 
 
   ### Verslag van meeting
