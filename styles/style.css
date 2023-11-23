@@ -28,4 +28,7 @@
 /****************/
 
 /* jouw code */
-
+ul {
+	display: flex;
+	flex-direction: row;
+}
