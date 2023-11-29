@@ -6,7 +6,11 @@
 }
 
 
+/****************/
+/* JOUW STYLING */
+/****************/
 
+/* jouw code */
 
 
 
@@ -17,18 +21,209 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+	--menu-gradient:white;
 }
 
+h1{
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 2em;
+}
 
+h2{
+	font-family: Arial, Helvetica, sans-serif;
+}
 
+p{
+	font-family: Arial, Helvetica, sans-serif;
+}
 
+a{
+	font-family: Arial, Helvetica, sans-serif;
+}
 
-/****************/
-/* JOUW STYLING */
-/****************/
+header {
+	min-height:4em;
+	padding:0 1em;
+	line-height:1;
+	
+	/* JOUW CODE HIER - stap 3 */
+	Display: flex;
+	Flex-wrap: wrap;
+	position: sticky;
+	z-index: 1;
+}
+  
+  /* alle links in de header */
+header a {
+	padding:.5em 0;
+	color:var(--general-color);
+	text-decoration:none;
+}
 
-/* jouw code */
-ul {
+header>ul {
 	display: flex;
 	flex-direction: row;
+}
+
+header ul li{
+margin: 1em;
+list-style: none;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+  /*********************/
+/* Hamburgermenu */
+/*********************/
+header>nav {
+	padding:1em;
+	
+	display:grid;
+	align-content:start;
+	gap:1em;
+	background-color:var(--menu-gradient);
+
+	position: fixed;
+	left: 0em;
+	right: 0em;  
+	top: 0em;
+	bottom: 0em;
+	translate: 100% 0%;
+}
+
+header>nav.toonMenu {
+	/* JOUW CODE HIER - stap 4 */
+	translate: 0% 0%;
+	transition: 0.3s;
+	justify-content: start;  
+}
+
+header>nav>button {
+	text-align: center;
+	align-content: center;
+}
+
+header>nav>ul {
+	padding-left: 0;
+}
+
+/***************/
+/* MENU BUTTON */
+/***************/
+header>button {
+	/* JOUW CODE HIER - stap 3 */
+	align-self: center;
+	order: -1;
+  }
+
+/***************/
+/* ITEMS DIRECT ONDER H1 */
+/***************/
+main>section ul {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: start;
+	width: 80vw;
+	align-self: start;
+}
+
+main>section ul li{
+	margin: 0.5em;
+	list-style: none;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 0.5em;
+	}
+
+main>section ul li a {
+	text-decoration: none;
+	color: black;
+	font-size: 0.8em;
+}
+
+/***************/
+/* EERSTE TEKSTBLOK */
+/***************/
+article:nth-of-type(1) {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+article:nth-of-type(1) img {
+	display: flex;
+	flex-grow: 1;
+	width: 80vw;
+}
+
+article:nth-of-type(1) h2 {
+	position: absolute;
+	top: 11vh;
+	left: 5vw;
+	color: white;
+}
+
+article:nth-of-type(1) p:nth-of-type(1) {
+	position: absolute;
+	top: 9vh;
+	left: 5vw;
+	font-size: 0.6em;
+	color: white;
+}
+
+article:nth-of-type(1) p:nth-of-type(2) {
+	position: absolute;
+	top: 16vh;
+	left: 5vw;
+	font-size: 0.7em;
+	color: white;
+}
+
+article:nth-of-type(1) a:first-of-type {
+	top: 20vh;
+	left: 5vw;
+	font-size: 0.6em;
+	color: white;
+	position: absolute;
+}
+
+article:nth-of-type(1) a:nth-of-type(2) {
+	top: 22vh;
+	left: 5vw;
+	font-size: 0.6em;
+	color: white;
+	position: absolute;
+}
+
+/***************/
+/* TWEEDE TEKSTBLOK */
+/***************/
+
+article:nth-of-type(2){
+	background-color: orange;
+	padding: 1em;
+	margin-top: 1em;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+article:nth-of-type(2) h2{
+	text-align: center;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+article:nth-of-type(2)>a{
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	padding: 0.5em;
+	margin: auto;
+}
+
+@media (max-width:42em) {
+	header>ul li {
+	  /* JOUW CODE HIER - stap 6 */
+	  display: none;
+	}
 }
