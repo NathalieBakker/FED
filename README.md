@@ -109,6 +109,7 @@ Screenreader test:
     <img src="readme-images/html_structuur.jpeg" width="375px" alt="HTML structuur">
   
     Op onderstaande afbeelding is te zien hoe ik heb geoefend met typografie.
+    
     <img src="readme-images/oefening_tekst.png" width="375px" alt="HTML structuur">
 
 
