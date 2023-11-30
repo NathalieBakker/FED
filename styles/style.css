@@ -169,17 +169,37 @@ header>button {
 	font-size: 1.5em;
 }
 
-.overzichtpagina main>section ul {
-	display: flex;
-	position: relative;
-	flex-direction: row;
-	justify-content: start;
-	align-self: start;
-	overflow: scroll;
-	padding: 0em;
-	margin-left: 0.5em;
-	margin-top: 0.5em;
+.overzichtpagina main>section:nth-of-type(2){
+	display: grid;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 2;
+
 }
+
+.overzichtpagina main>section:nth-of-type(2) p {
+	position: absolute;
+}
+
+.overzichtpagina main>section:nth-of-type(2) > section:first-child{
+	display: grid;
+	grid-row-start: -1;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.overzichtpagina main>section:nth-of-type(2) h3{
+	display: grid;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 2;
+
+	width: 100vw;
+}
+
 
 .overzichtpagina main>section ul li{
 	margin: 0.2em;
