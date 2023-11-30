@@ -30,16 +30,12 @@ h1{
 	font-size: 2em;
 }
 
-h2{
+h2, h3, p, a{
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-p{
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-a{
-	font-family: Arial, Helvetica, sans-serif;
+ul{
+	list-style: none;
 }
 
 header {
@@ -67,9 +63,8 @@ header>ul {
 }
 
 header ul li{
-margin: 1em;
-list-style: none;
-font-family: Arial, Helvetica, sans-serif;
+	margin: 1em;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
   /*********************/
@@ -117,53 +112,131 @@ header>button {
   }
 
 /***************/
-/* ITEMS DIRECT ONDER H1 */
+/* TWEEDE TEKSTBLOK */
 /***************/
-main>section ul {
+
+.overzichtpagina article:nth-of-type(2){
+	background-color: rgba(242, 186, 65);
+	padding: 1em;
+	margin-top: 1em;
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: start;
-	width: 80vw;
-	align-self: start;
 }
 
-main>section ul li{
+.overzichtpagina article:nth-of-type(2) h2{
+	text-align: center;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+.overzichtpagina article:nth-of-type(2) p{
+	text-align: center;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 2em;
+	font-size: 0.8em;
+}
+
+.overzichtpagina article:nth-of-type(2)>a{
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	padding: 0.8em;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin: auto;
+	margin-top: 0.5em;
+	border-radius: 2em;
+}
+
+.overzichtpagina article:nth-of-type(2)>p>a{
+	color: var(--color-text);
+}
+
+/***************/
+/* SECTION MET KERSTITEMS */
+/***************/
+
+.overzichtpagina main>section:nth-of-type(2){
+	background-color: #005349;
+	padding-top: 0.2em;
+	margin-top: 1em;
+}
+
+.overzichtpagina main>section>h3{
+	color: white;
 	margin: 0.5em;
+	font-size: 1.5em;
+}
+
+.overzichtpagina main>section ul {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	justify-content: start;
+	align-self: start;
+	overflow: scroll;
+	padding: 0em;
+	margin-left: 0.5em;
+	margin-top: 0.5em;
+}
+
+.overzichtpagina main>section ul li{
+	margin: 0.2em;
 	list-style: none;
 	font-family: Arial, Helvetica, sans-serif;
-	margin-top: 0.5em;
-	}
+}
 
-main>section ul li a {
+.overzichtpagina main>section ul li a {
 	text-decoration: none;
 	color: black;
 	font-size: 0.8em;
 }
 
+.overzichtpagina main>section ul li:nth-of-type(1) p {
+	position: absolute;
+	bottom: 7em;
+	left: 3em;
+	color: white;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.overzichtpagina main>section ul li:nth-of-type(2) p {
+	position: absolute;
+	bottom: 7em;
+	right: 0;
+	margin-left: 5em;
+	color: white;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+
+
 /***************/
 /* EERSTE TEKSTBLOK */
 /***************/
-article:nth-of-type(1) {
+.overzichtpagina article:nth-of-type(1) {
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
 }
 
-article:nth-of-type(1) img {
+.overzichtpagina article:nth-of-type(1) img {
 	display: flex;
 	flex-grow: 1;
 	width: 80vw;
 }
 
-article:nth-of-type(1) h2 {
+.overzichtpagina article:nth-of-type(1) h2 {
 	position: absolute;
 	top: 11vh;
 	left: 5vw;
 	color: white;
 }
 
-article:nth-of-type(1) p:nth-of-type(1) {
+.overzichtpagina article:nth-of-type(1) p:nth-of-type(1) {
 	position: absolute;
 	top: 9vh;
 	left: 5vw;
@@ -171,7 +244,7 @@ article:nth-of-type(1) p:nth-of-type(1) {
 	color: white;
 }
 
-article:nth-of-type(1) p:nth-of-type(2) {
+.overzichtpagina article:nth-of-type(1) p:nth-of-type(2) {
 	position: absolute;
 	top: 16vh;
 	left: 5vw;
@@ -179,7 +252,7 @@ article:nth-of-type(1) p:nth-of-type(2) {
 	color: white;
 }
 
-article:nth-of-type(1) a:first-of-type {
+.overzichtpagina article:nth-of-type(1) a:first-of-type {
 	top: 20vh;
 	left: 5vw;
 	font-size: 0.6em;
@@ -187,7 +260,7 @@ article:nth-of-type(1) a:first-of-type {
 	position: absolute;
 }
 
-article:nth-of-type(1) a:nth-of-type(2) {
+.overzichtpagina article:nth-of-type(1) a:nth-of-type(2) {
 	top: 22vh;
 	left: 5vw;
 	font-size: 0.6em;
@@ -195,30 +268,36 @@ article:nth-of-type(1) a:nth-of-type(2) {
 	position: absolute;
 }
 
+
+
 /***************/
-/* TWEEDE TEKSTBLOK */
+/* FOOTER */
 /***************/
 
-article:nth-of-type(2){
-	background-color: orange;
-	padding: 1em;
-	margin-top: 1em;
+footer{
+	background-color: #F8F7F2;
+}
+
+footer>a{
+	display: flex;
+	justify-content: center;
+}
+
+footer ul{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0em;
 }
 
-article:nth-of-type(2) h2{
-	text-align: center;
-	margin-left: 2em;
-	margin-right: 2em;
+footer li{
+	margin: 0.5em;
+	
 }
 
-article:nth-of-type(2)>a{
+footer a {
 	text-decoration: none;
-	color: white;
-	background-color: black;
-	padding: 0.5em;
-	margin: auto;
+	color: var(--color-text);
 }
 
 @media (max-width:42em) {
