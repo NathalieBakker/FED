@@ -105,28 +105,32 @@ Screenreader test:
 
 <details>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
+    Op onderstaande afbeelding is te zien hoe mijn HTML structuur er uit zag.
+    <img src="readme-images/html_structuur.jpeg" width="375px" alt="HTML structuur">
+  
+    Op onderstaande afbeelding is te zien hoe ik heb geoefend met typografie:
+    <img src="readme-images/oefening_tekst.png" width="375px" alt="HTML structuur">
+
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  De oefening met het hamburgermenu was lastig.
+  Deze week ben ik begonnen met het maken van de basis van mijn HTML. Dit ging best goed volgens mij. Ik vond het af en toe wel lastig om te bepalen of iets een section of een article was. 
+  Verder heb ik alle oefeningen gemaakt. De oefening met het hamburgermenu vond ik wel lastig. Ik kwam best wel ver met de oefening, maar de laatste paar stappen lukten me helaas niet. Deze stappen wil ik       
+  daarom met de docent bespreken tijdens mijn voortgangsgesprek.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Nathalie                       | Sosan                  | Fouzia                         | student 4        |
-  | Hamburgermenu bespreken        | HTML laten checken     | Toegankelijkheid bespreken     | ---              |
-  | HTML structuur laten checken   | en dit                 |                                | en dan ik dat    |
-  | en dat ook nog                 | dit als er tijd is     | nog een punt                   | dit wil ik zeker |
-  | ...                            | ...                    | ...                            | ...              |
+  | Nathalie                       | Sosan                  | Fouzia                        
+  | Hamburgermenu bespreken        | HTML laten checken     | Toegankelijkheid bespreken     
+  | HTML structuur laten checken                                   
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - De laatste 2 stappen van de hamburgermenu opdracht heeft de docent aan mij uitgelegd.
+  - De docent heeft mijn HTML structuur gecontroleerd en me tips gegeven om het beter te maken.
+  - Ik heb meegekeken met de HTML structuren van de andere leerlingen.
 
 </details>
 
@@ -138,9 +142,18 @@ Screenreader test:
 
 <details>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
+  
+ 
+
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Tijdens deze week ging het maken van het hamburgermenu in mijn eigen website best goed, aangezien ik hem werkend kreeg. Wel was er een plaatje wat over het menu heen ging. In de les heb ik toen aan de docent gevraag hoe ik het plaatje naar achteren moest krijgen. Dit bleek met z-index te moeten. Nu moet ik nog zorgen dat het menu knopje het C&A logo is i.p.v. een knopje met menu erin. 
+   <img src="Schermafbeelding_hamburgermenu.png" width="375px" alt="HTML structuur">
+   <img src="hamburgermenu_uitklap.png" width="375px" alt="HTML structuur">
+   
+  Ik wilde ook graag mijn plaatjes scrollbaar maken. Dit lukte me alleen nog niet tot dusver. Ik heb daarom in de les aan Donna gevraagd hoe ik dit het beste kan doen. Na haar tips was het me gelukkig wel gelukt. Later was ik ook nog bezig met het plaatsen van de tekst voor de plaatjes. Bij het eerste plaatje was dit me gelukt. Bij het tweede plaatje wilde de tekst helaas niet verder naar rechts dan het scherm breed was. Dit wil ik tijdens het voortgangsgesprek graag bespreken met 1 van de assistenten.
+   <img src="Schermafbeelding_scroll.png" width="375px" alt="HTML structuur">
 
 
   ### Agenda voor meeting
