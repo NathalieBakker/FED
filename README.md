@@ -161,8 +161,10 @@ Screenreader test:
 
   | Nathalie      | Sosan          | Fouzia    |        |
   | --            | ---                | ---          | ---              |
-  | Vragen hoe ik een uitklapmenu kan maken  | HTML structuur laten nakijken             | en ik dit    | en dan ik dat    |
-  | Vragen hoe ik tekst in scrollvak op de juiste plek krijg. | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Vragen hoe ik een uitklapmenu kan maken  |  | HTML structuur laten nakijken   | en dan ik dat    |
+  | Vragen hoe ik tekst in scrollvak op de juiste plek krijg. |  |  |  |
+  | Tekstvlak uit laten klappen |  |  |  |
+
 
 
   ### Verslag van meeting
