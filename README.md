@@ -108,8 +108,9 @@ Screenreader test:
     Op onderstaande afbeelding is te zien hoe mijn HTML structuur er uit zag.
     <img src="readme-images/html_structuur.jpeg" width="375px" alt="HTML structuur">
   
-    Op onderstaande afbeelding is te zien hoe ik heb geoefend met typografie:
+    Op onderstaande afbeelding is te zien hoe ik heb geoefend met typografie.
     <img src="readme-images/oefening_tekst.png" width="375px" alt="HTML structuur">
+
 
 
   ### Stand van zaken
@@ -122,7 +123,7 @@ Screenreader test:
 
   | Nathalie                       | Sosan                  | Fouzia                        
   | Hamburgermenu bespreken        | HTML laten checken     | Toegankelijkheid bespreken     
-  | HTML structuur laten checken                                   
+  | HTML structuur laten checken   |                        |                               
 
 
   ### Verslag van meeting
@@ -161,8 +162,8 @@ Screenreader test:
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Vragen hoe ik een uitklapmenu kan maken  | HTML structuur laten nakijken             | en ik dit    | en dan ik dat    |
+  | Vragen hoe ik tekst in scrollvak op de juiste plek krijg. | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
