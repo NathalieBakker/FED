@@ -120,12 +120,12 @@ Screenreader test:
   daarom met de docent bespreken tijdens mijn voortgangsgesprek.
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  samen met je groepje opstellen                          
 
-  | Nathalie                       | Sosan                  | Fouzia                        
-  | Hamburgermenu bespreken        | HTML laten checken     | Toegankelijkheid bespreken     
-  | HTML structuur laten checken   |                        |                               
-
+  | Nathalie      | Sosan          | Fouzia    | |
+  | ---            | ---                | ---          | ---              |
+  | Hamburgermenu bespreken  | HTML laten checken             | Toegankelijkheid bespreken    |
+ 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -161,11 +161,10 @@ Screenreader test:
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
+  | Nathalie      | Sosan          | Fouzia    |        |
+  | --            | ---                | ---          | ---              |
   | Vragen hoe ik een uitklapmenu kan maken  | HTML structuur laten nakijken             | en ik dit    | en dan ik dat    |
   | Vragen hoe ik tekst in scrollvak op de juiste plek krijg. | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
