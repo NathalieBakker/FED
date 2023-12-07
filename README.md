@@ -207,6 +207,10 @@ Screenreader test:
   
   Verder heb ik afgelopen maandag 04-12 mijn tweede website grotendeels gemaakt. Ik liep hierbij wel tegen wat kleine dingetjes aan, zoals elementen die niet naar de juiste plek wilden. Uiteindelijk heb ik dit gelukkig met de hulp van Donna op kunnen lossen. Ik had ook samen met haar gekeken naar mijn scrollbalken. Eerst wilde ik deze namelijk weghalen, maar zij vertelde me dat ik ze ook gewoon kon stylen. Dit had ze zelf ook nog nooit gedaan, maar we kwamen er gelukkig wel uit na even op Google te hebben gekeken.
 
+  Ook ben ik deze week bezig geweest met het stylen van de focusstate van mijn buttons en links. Dit is het resultaat geworden.
+  <img src="readme-images/Focusstate.png" width="375px" alt="Tekst op juiste plek in afbeeldingen van het scrollvak">
+
+
   ### Agenda voor meeting
   samen met je groepje opstellen
 
