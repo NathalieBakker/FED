@@ -15,27 +15,64 @@
 <body class="overzichtpagina">
 
 	<header>
-
-
 		<!-- Menu -->
-		<button><img src= "" alt="" />Menu</button>
+		<nav>
+			<button><img src= "./images/menu.png" alt="Hamburgermenu"/></button>
+			<img src="./images/CA_logo.png" alt="Het C&A logo">
+ 
+			<ul>
+				<li>
+					<a href="">
+						<img src= "./images/search.png" alt="Zoekicoontje"/>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src= "./images/profile.png" alt="Jouw profiel"/>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src= "./images/favorites.png" alt="Jouw favorieten"/>
+					</a>
+					</li>
+				<li>
+					<a href="">
+						<img src= "./images/shoppingbag.png" alt="Jouw winkelmandje"/>
+					</a>
+				</li>
+			</ul>
+		</nav>
 
 		<nav>
-			<button><img src= "https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" />Sluit</button>
-			<ul>
-				<li><a href="#">Dames</a></li>
-				<li><a href="#">Heren</a></li>
-				<li><a href="#">CLOCKHOUSE</a></li>
-				<li><a href="#">Kids</a></li>
-				<li><a href="#">Baby's</a></li>
-				<li><a href="#">Sale</a></li>
+			<button><img src= "./images/kruisje.png" alt="Menu sluiten" /></button>
+			<ul aria-hidden="true">
+				<li>
+					<a href="#">Dames</a>
+					<img src="./images/arrow.png" alt="Pijl voor een uitgebreider overzicht">
+				</li>
+				<li>
+					<a href="#">Heren</a>
+					<img src="./images/arrow.png" alt="Pijl voor een uitgebreider overzicht">
+				</li>
+				<li>
+					<a href="#">CLOCKHOUSE</a>
+					<img src="./images/arrow.png" alt="Pijl voor een uitgebreider overzicht">
+				</li>
+				<li>
+					<a href="#">Kids</a>
+					<img src="./images/arrow.png" alt="Pijl voor een uitgebreider overzicht">
+				</li>
+				<li>
+					<a href="#">Baby's</a>
+					<img src="./images/arrow.png" alt="Pijl voor een uitgebreider overzicht">
+				</li>
+				<li>
+					<a href="#">Sale</a>
+					<img src="./images/arrow.png" alt="Pijl voor een uitgebreider overzicht">
+				</li>
 			</ul>
-			</nav>
-
-
-
-		<img src="" alt="">
-
+		</nav>
 
 	</header>
 
@@ -44,7 +81,6 @@
 			<h1>Dames</h1>
 
 			<ul>
-				<li><a href="https://www.c-and-a.com/nl/nl/shop/dames">Dames</a></li>
 				<li><a href="https://www.c-and-a.com/nl/nl/shop/dames-kleding-jassen">Jassen</a></li>
 				<li><a href="#">Shop voor de feestdagen</a></li>
 				<li><a href="https://www.c-and-a.com/nl/nl/shop/dames-nieuw-in-kleding">New</a></li>
@@ -60,38 +96,41 @@
 
 		<article>
 			<h2>-20% op tops</h2>
-				<img src="images/homepage1.jpg" alt="afbeelding van 2 vrouwen">
+				<img src="images/homepage1.jpg" alt="afbeelding van 2 vrouwen in chique kleding">
 				<p>Online</p>
 				<p>Met uitzondering van lingerie en blazers.</p>
 
-				<a href="">Truien shoppen</a>
-				<a href="">Shop sweatshirts</a>
+				<a href="https://www.c-and-a.com/nl/nl/shop/dames-kleding-truien-vesten">Truien shoppen</a>
+				<a href="https://www.c-and-a.com/nl/nl/shop/dames-kleding-truien-vesten-sweatshirts">Shop sweatshirts</a>
 		</article>
 
 		<article>	
 			<h2>Word gratis member en krijg 10% welkomstbonus*</h2>
 
-				<a href="">Nu member worden</a>
-				<p>*Ga voor informatie over de voorwaarden van ons klantprogramma naar <a href="">www.c-a.com/foryou</a></p>
+				<a href="https://www.c-and-a.com/nl/nl/shop/foryou">Nu member worden</a>
+				<p>*Ga voor informatie over de voorwaarden van ons klantprogramma naar <a href="https://www.c-and-a.com/nl/nl/shop/foryou">www.c-a.com/foryou</a></p>
 		</article>	
 
-		<section>
+		<Section>
 			<h3>Perfecte cadeaus onder de 50 €</h3>
-			<section>
-				<img src="images/kerstsokken.jpg" alt="">
-				<p>Cadeaus tot 10 €</p>
-			</section>
 
-			<section>
-				<img src="images/kerstpyjama.jpg" alt="">
-				<p>Cadeaus tot 20 €</p>
-			</section>
+				<ul>
+					<li>
+						<a href=""><img src="images/kerstsokken.jpg" alt="Kerstsokken"></a>
+						<p>Cadeaus tot 10 €</p>
+					</li>
 
-			<section>
-				<img src="images/kerstcadeautjes.jpg" alt="">
-				<p>Cadeaus tot 20 €</p>
-			</section>
-		</section>
+					<li>
+						<a href=""><img src="images/kerstpyjama.jpg" alt="Kerstpyjama's"></a>
+						<p>Cadeaus tot 20 €</p>
+					</li>
+
+					<li>
+						<a href=""><img src="images/kerstcadeautjes.jpg" alt="Kerstcadeautjes"></a>
+						<p>Cadeaus tot 20 €</p>
+					</li>
+				</ul>
+		</Section>
 
 		<article>
 			<h3>Dameskleding: de juiste outfit voor iedere gelegenheid</h3>
@@ -108,69 +147,109 @@
 	</main>
 
 	<footer>
-			<!-- Uitklapmenu's -->
+
+		<ul>
+			<li>
+				<p>Contact</p>
+				<img src="./images/chevron-down.png" alt="Contact menu uitklappen">
+			</li>
+			<li>
+				<p>Service</p>
+				<img src="./images/chevron-down.png" alt="Service menu uitklappen">
+
+			</li>
+			<li>
+				<p>Over C&A</p>
+				<img src="./images/chevron-down.png" alt="Over C&A menu uitklappen">
+
+			</li>
+		</ul>
+		
+		<img src="./images/internetbol.png" alt="Plaatje van een internetbol">
+		<a href="">Nederland|NL</a>
+
+		<ul>
+			<li>
+				<a href="#"><img src="./images/Paypal.png" alt="Paypal afbeelding"></a>
+			</li>
+			<li>			
+				<a href="#"><img src="./images/Mastercard.png" alt="Mastercard afbeelding"></a>
+			</li>
+			<li>
+				<a href="#">	<img src="./images/Visa.png" alt="Visa afbeelding"></a>
+			</li>			
+			<li>
+				<a href="#">	<img src="./images/AMEX.png" alt="Amex afbeelding"></a>
+			</li>
+			<li>
+				<a href="#">	<img src="./images/iDeal.png" alt="iDeal afbeelding"></a>
+			</li>
+			<li>
+				<a href="#">	<img src="./images/Rechnung-NL.png" alt="Rechnung NL afbeelding"></a>
+			</li>
+			<li>
+				<a href="#">	<img src="./images/Post_NL.png" alt="Post NL afbeelding"></a>
+			</li>
+			<li>
+				<a href="#">	<img src="./images/DHL.png" alt="DHL afbeelding"></a>
+			</li>
+			<li>
+				<a href="#">	<img src="./images/CA_Filiale_NL.png" alt="C&A filiaal afbeelding"></a>
+			</li>
+		</ul>
+
+		<ul>
+			<li>
+				<a href=""><img src="./images/Facebook.svg" alt="Facebook icoontje"></a>
+			</li>
+			<li>
+				<a href=""><img src="./images/Pinterest.svg" alt="Pinterest icoontje"></a>
+			</li>
+			<li>
+				<a href=""><img src="./images/Youtube.svg" alt="Youtube icoontje"></a>
+			</li>
+			<li>
+				<a href=""><img src="./images/Instagram.svg" alt="Instagram icoontje"></a>
+			</li>
+			<li>
+				<a href=""><img src="./images/tiktok.svg" alt="Tiktok icoontje"></a>
+			</li>
+			<li>
+				<a href=""><img src="./images/linkedin.svg" alt="Linkedin icoontje"></a>
+			</li>
+		</ul>
+
+		<ul>
+			<li>
+				<a href="">Algemene voorwaarden</a>
+			</li>
+			<li>
+				<a href="">Gegevensbescherming</a>
+			</li>
+			<li>
+				<a href="">Over C&A Online</a>
+			</li>
+			<li>
+				<a href="">Cookie-instellingen</a>
+			</li>
+		</ul>
+
+		<ul>
+			<li>
+				<a href="">Gewatteerde Jassen</a>
+			</li>
+			<li>
+				<a href="">Party outfits voor heren</a>
+			</li>
+			<li>
+				<a href="">Koopgids: Overgangsjassen</a>
+			</li>
+			<li>
+				<a href="">A-lijn jurken</a>
+			</li> 
+		</ul>
 
 
-			<ul>
-				<li>blabla</li>
-				<li></li>
-				<li></li>
-			</ul>
-
-			<a href="">Nederland|NL</a>
-			<a href=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""></a>
-
-			<!-- list met social media icoontjes// -->
-			<ul>
-				<li>
-					<a href=""></a>
-				</li>
-				<li>
-					<a href=""></a>
-				</li>
-				<li>
-					<a href=""></a>
-				</li>
-				<li>
-					<a href=""></a>
-				</li>
-				<li>
-					<a href=""></a>
-				</li>
-				<li>
-					<a href=""></a>
-				</li>
-			</ul>
-
-			<ul>
-				<li>
-					<a href="#">Algemene voorwaarden</a>
-				</li>
-				<li>
-					<a href="">Gegevensbescherming</a>
-				</li>
-				<li>
-					<a href="">Over C&A Online</a>
-				</li>
-				<li>
-					<a href="">Cookie-instellingen</a>
-				</li>
-			</ul>
-
-			<ul>
-				<li>
-					<a href="">Gewatteerde Jassen</a>
-				</li>
-				<li>
-					<a href="">Party outfits voor heren</a>
-				</li>
-				<li>
-					<a href="">Koopgids: Overgangsjassen</a>
-				</li>
-				<li>
-					<a href="">A-lijn jurken</a>
-				</li>
-			</ul>
 	</footer>
 
 	<script defer src="scripts/script.js"></script>
