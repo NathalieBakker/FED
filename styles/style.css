@@ -20,18 +20,50 @@
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#eee;
-	--menu-gradient:white;
+	--color-white-text: white;
+	--color-block-and-background:white;
+	--footer-color:#F8F7F2;
+	--color-yellow-block: rgba(242, 186, 65);
+	--color-green-block: #005349;
+}
+
+@media (prefers-color-scheme:dark){
+	:root{
+		--color-text:#eee;
+		--color-block-and-background:#000000;
+		--footer-color: #545454;
+		--color-yellow-block: #472418;
+		--color-green-block: #005349;
+	}
+
+	h1{
+		padding-top: 0.5em;
+	}
+	
+	footer{
+		margin-top: 0em;
+		padding-top: 4em;
+	}
+}
+
+main, footer{
+	background-color: var(--color-block-and-background);
 }
 
 h1{
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.5em;
+	margin-top: 0em;
+	margin-left: 0.5em;
+	margin-bottom: 0.5em;
+	color: var(--color-text);
 }
 
 h2, h3, p, a{
 	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 0.5em;
+	color: var(--color-text);
 }
 
 ul{
@@ -39,8 +71,8 @@ ul{
 }
 
 header {
-	min-height:4em;
-	padding:0 1em;
+	min-height: 4em;
+	padding: 0.1em;
 	line-height:1;
 	
 	/* JOUW CODE HIER - stap 3 */
@@ -53,13 +85,17 @@ header {
   /* alle links in de header */
 header a {
 	padding:.5em 0;
-	color:var(--general-color);
 	text-decoration:none;
 }
 
-header>ul {
+header nav:nth-of-type(1) {
+	display: flex;
+}
+
+header nav:nth-of-type(1) ul {
 	display: flex;
 	flex-direction: row;
+	margin-left: 2em;
 }
 
 header ul li{
@@ -67,16 +103,24 @@ header ul li{
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+nav>img {
+	display: flex;
+	align-self: center;
+	width: 3.5em;
+	height: 2.5em;
+
+}
+
   /*********************/
 /* Hamburgermenu */
 /*********************/
-header>nav {
+header nav:nth-of-type(2) {
 	padding:1em;
 	
 	display:grid;
 	align-content:start;
 	gap:1em;
-	background-color:var(--menu-gradient);
+	background-color:var(--color-block-and-background);
 
 	position: fixed;
 	left: 0em;
@@ -86,37 +130,400 @@ header>nav {
 	translate: 100% 0%;
 }
 
-header>nav.toonMenu {
-	/* JOUW CODE HIER - stap 4 */
+header>nav:nth-of-type(2).toonMenu {
 	translate: 0% 0%;
 	transition: 0.3s;
 	justify-content: start;  
 }
 
-header>nav>button {
-	text-align: center;
-	align-content: center;
+header>nav:nth-of-type(2) {
+	justify-content: end;
 }
 
-header>nav>ul {
+header>nav:nth-of-type(2)>button {
+	display: flex;
+	justify-content: end;
+	border: none;
+	width: 90vw;
+	background-color: var(--color-block-and-background);
+	margin-top: 0.7em;
+}
+
+header>nav:nth-of-type(2)>ul {
 	padding-left: 0;
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 /***************/
 /* MENU BUTTON */
 /***************/
-header>button {
+header>nav>button {
 	/* JOUW CODE HIER - stap 3 */
 	align-self: center;
 	order: -1;
+	border: none;
+	background-color: white;
   }
 
+  /***************/
+/* EERSTE BLOK DETAILPAGINA */
 /***************/
-/* TWEEDE TEKSTBLOK */
+
+article:nth-of-type(1){
+	display: flex;
+	flex-wrap: wrap;
+} 
+
+article h1{
+	margin-top: 0.8em;
+	display: flex;
+	flex-basis: 85%;
+}
+
+  /***************/
+/* Rok afbeelding */
+/***************/
+article>img:nth-of-type(1){
+	display: flex;
+	order: -1;
+	width: 100vw;
+}
+
+  /***************/
+/* Favorieten icoontje*/
+/***************/
+article>button:nth-of-type(1){
+	display: flex;
+	align-self: center;
+	border: none;
+	background-color: var(--color-block-and-background);
+	margin-top: 1em;
+}
+
+article>button:nth-of-type(1) img{
+	width: 2.5em;
+	height: 2.5em;
+}
+
+/* Rokkleur afbeelding */
+article img:nth-of-type(2){
+	display: flex;
+}
+
+/* Informatie icoontje met tekst */
+article figure{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	margin-top: 1em;
+	margin-left: 0.5em;
+}
+
+article figure img{
+	display: flex;
+	align-self: center;
+	width: 2.3em;
+	height: 4.3em;
+	background-color: var(--footer-color);
+	padding-top: 0.5em;
+	padding-bottom: 1.5em;	
+}
+
+article figcaption{
+	background-color: var(--footer-color);
+	padding: 1em;
+	width: 70vw;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Article vervolg*/
+article>p {
+	margin-top: 0em;
+}
+
+article:nth-of-type(1)>p:nth-of-type(1){
+	display: flex;
+	flex-basis: 30%;
+	font-size: 2em;
+	font-weight: bold;
+	margin-left: 0.4em;
+}
+
+article:nth-of-type(1) p:nth-of-type(2){
+	display: flex;
+	flex-basis: 60%;
+	font-size: small;
+	align-items: center;
+}
+
+article:nth-of-type(1) p:nth-of-type(3){
+	display: flex;
+	flex-basis: 100%;
+	margin-left: 0.8em;
+}
+
+article:nth-of-type(1) p:nth-of-type(4){
+	display: flex;
+	align-self: center;
+	font-size: 0.9em;
+	margin-top: 3em;
+	margin-bottom: 2em;
+	margin-left: 0.5em;
+}
+
+
+article:nth-of-type(1) p:nth-of-type(5){
+	display: flex;
+	flex-basis: 100%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+/* Meetlint icoontje */
+
+article img:nth-of-type(3){
+	display: flex;
+	align-self: center;
+	width: 2em;
+	height: 2em;
+	margin-left: 1em;
+	margin-top: 0.5em;
+}
+
+/* Vinkjes voor tekst */
+article>ul>li img{
+	display: flex;
+	align-self: flex-start;
+	width: 1em;
+	height: 1em;
+	margin-right: 0.5em;
+}
+
+article ul{
+	padding: 0.5em;
+}
+
+article ul li {
+	display: flex;
+	flex-basis: 40%;
+}
+
+article ul li p{
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+article a{
+	display: flex;
+	align-self: center;
+	color: var(--color-text);
+	font-weight: bold;
+}
+
+article a:nth-of-type(1){
+	display: flex;
+	align-self: center;
+	margin-left: 0.3em;
+	margin-top: 1em;
+}
+
+article button:nth-of-type(2){
+	background-color: var(--color-block-and-background);
+	color: var(--color-text);
+	border-radius: 2em;
+	width: 93vw;
+	padding: 1em;
+	font-size: 0.9em;
+	font-weight: bold;
+	margin: auto;
+	margin-bottom: 0.7em;
+}
+
+article button:nth-of-type(3){
+	background-color: var(--color-text);
+	color: var(--color-block-and-background);
+	border-radius: 2em;
+	width: 93vw;
+	padding: 1em;
+	font-size: 0.9em;
+	font-weight: bold;
+	margin: auto;
+	font-display: ;
+}
+
+  /***************/
+/* SHOP THE LOOK BLOK DETAILPAGINA*/
+/***************/
+
+section ul{
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	justify-content: start;
+	align-self: start;
+	overflow: scroll;
+	padding: 0em;
+	margin-left: 0em;
+	margin-top: 0.5em;	
+}
+
+section li{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+section h2{
+	font-size: 2.5em;
+}
+
+section li>img{
+	width: 60vw;
+	margin-right: 0.5em;
+}
+
+section li button{
+	display: flex;
+	position: absolute;
+	top: 0;
+	align-self: end;
+	border: none;
+	right: 0.5em;
+}
+
+section li p{
+	margin-bottom: 0em;
+}
+
+  /***************/
+/* NAV ONDERAAN DETAILPAGINA */
+/***************/
+
+nav ol{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	white-space: nowrap;
+	overflow: scroll;
+	justify-content: center;
+	margin-top: 5em;
+	margin-bottom: 3em;
+}
+
+nav ol li:nth-of-type(1){
+	margin-left: 0.5em;
+}
+
+nav ol a{
+	text-decoration: none;
+	color: var(--color-text);
+}
+
+nav ol li{
+	display: flex;
+	flex-direction: row;
+}
+
+nav ol img{
+	display: flex;
+	width: 1em;
+	height: 2em;
+}
+
+/* BLOK NIEUWSBRIEF DETAILPAGINA */
+section>p:nth-of-type(1){
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+
+section>p:nth-of-type(2){
+	text-align: center;
+	margin-top: 0em;
+	margin-bottom: 3em;
+}
+
+form{
+	display: flex;
+	justify-content: center;
+}
+
+/*Bron voor lijn onder input veld: W3Schools Online HTML Editor. (z.d.). https://www.w3schools.com/css/tryit.asp?filename=trycss_form_border2*/
+form input{
+	outline: none;
+	border: none;
+	border-bottom: 0.1em solid var(--color-text);
+	width: 100%;
+}
+
+  /***************/
+/* EERSTE TEKSTBLOK OVERZICHTSPAGINA */
+/***************/
+.overzichtpagina h1{
+	font-size: 2em;
+}
+
+.overzichtpagina article:nth-of-type(1) {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.overzichtpagina article:nth-of-type(1) img {
+	display: flex;
+	flex-grow: 1;
+	width: 80vw;
+}
+
+.overzichtpagina article:nth-of-type(1) h2 {
+	position: absolute;
+	top: 11vh;
+	left: 5vw;
+	color: var(--color-white-text);
+}
+
+.overzichtpagina article:nth-of-type(1) p:nth-of-type(1) {
+	position: absolute;
+	top: 9vh;
+	left: 5vw;
+	font-size: 0.6em;
+	color: var(--color-white-text);
+}
+
+.overzichtpagina article:nth-of-type(1) p:nth-of-type(2) {
+	position: absolute;
+	top: 20vh;
+	left: 5vw;
+	font-size: 0.7em;
+	color: var(--color-white-text);
+}
+
+.overzichtpagina article:nth-of-type(1) a:first-of-type {
+	top: 25vh;
+	left: 5vw;
+	font-size: 0.6em;
+	color: var(--color-white-text);
+	position: absolute;
+}
+
+.overzichtpagina article:nth-of-type(1) a:nth-of-type(2) {
+	top: 28vh;
+	left: 5vw;
+	font-size: 0.6em;
+	color: var(--color-white-text);
+	position: absolute;
+}
+
+
+
+
+/***************/
+/* TWEEDE TEKSTBLOK OVERZICHTSPAGINA */
 /***************/
 
 .overzichtpagina article:nth-of-type(2){
-	background-color: rgba(242, 186, 65);
+	background-color: var(--color-yellow-block);
 	padding: 1em;
 	margin-top: 1em;
 	display: flex;
@@ -134,13 +541,13 @@ header>button {
 	margin-left: 1em;
 	margin-right: 1em;
 	margin-top: 2em;
-	font-size: 0.8em;
+	font-size: 1em;
 }
-
+ 
 .overzichtpagina article:nth-of-type(2)>a{
 	text-decoration: none;
-	color: white;
-	background-color: black;
+	color: var(--color-block-and-background);
+	background-color: var(--color-text);
 	padding: 0.8em;
 	padding-left: 1em;
 	padding-right: 1em;
@@ -151,143 +558,94 @@ header>button {
 
 .overzichtpagina article:nth-of-type(2)>p>a{
 	color: var(--color-text);
+	display: inline;
 }
 
 /***************/
-/* SECTION MET KERSTITEMS */
+/* SECTION MET KERSTITEMS OVERZICHTSPAGINA */
 /***************/
 
 .overzichtpagina main>section:nth-of-type(2){
-	background-color: #005349;
+	background-color: var(--color-green-block);
 	padding-top: 0.2em;
 	margin-top: 1em;
 }
 
 .overzichtpagina main>section>h3{
-	color: white;
+	color: var(--color-white-text);
 	margin: 0.5em;
 	font-size: 1.5em;
 }
 
-.overzichtpagina main>section:nth-of-type(2){
-	display: grid;
-	grid-row-start: 1;
-	grid-row-end: 2;
-	grid-column-start: 1;
-	grid-column-end: 2;
-
+.overzichtpagina main>section ul {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	justify-content: start;
+	align-self: start;
+	overflow: scroll;
+	padding: 0em;
+	margin-left: 0.5em;
+	margin-top: 0.5em;	
 }
-
-.overzichtpagina main>section:nth-of-type(2) p {
-	position: absolute;
-}
-
-.overzichtpagina main>section:nth-of-type(2) > section:first-child{
-	display: grid;
-	grid-row-start: -1;
-	grid-row-end: 3;
-	grid-column-start: 2;
-	grid-column-end: 3;
-}
-
-.overzichtpagina main>section:nth-of-type(2) h3{
-	display: grid;
-	grid-row-start: 1;
-	grid-row-end: 2;
-	grid-column-start: 1;
-	grid-column-end: 2;
-
-	width: 100vw;
-}
-
 
 .overzichtpagina main>section ul li{
-	margin: 0.2em;
+	white-space: nowrap;
+	gap: 4em;
+	margin: 0.3em;
 	list-style: none;
 	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	width: auto ;
 }
 
 .overzichtpagina main>section ul li a {
 	text-decoration: none;
-	color: black;
+	color: var(--color-text);
 	font-size: 0.8em;
 }
 
-.overzichtpagina main>section ul li:nth-of-type(1) p {
+.overzichtpagina main>section ul li p {
 	position: absolute;
 	bottom: 7em;
-	left: 3em;
-	color: white;
+	left: 0;
+	right: 0;
+	color: var(--color-block-and-background);
 	font-weight: bold;
 	font-size: 1.2em;
+	text-align: center;
+
 }
 
 .overzichtpagina main>section ul li:nth-of-type(2) p {
 	position: absolute;
 	bottom: 7em;
+	left: 0;
 	right: 0;
-	margin-left: 5em;
-	color: white;
+	/* margin-left: 5em; */
+	color: var(--color-block-and-background);
 	font-weight: bold;
 	font-size: 1.2em;
+	text-align: center;
 }
-
-
 
 /***************/
-/* EERSTE TEKSTBLOK */
+/* ARTICLE DAMESKLEDING OVERZICHTPAGINA */
 /***************/
-.overzichtpagina article:nth-of-type(1) {
-	display: flex;
-	flex-wrap: wrap;
-	position: relative;
+
+.overzichtpagina article h3{
+	font-size: 2em;
 }
 
-.overzichtpagina article:nth-of-type(1) img {
-	display: flex;
-	flex-grow: 1;
-	width: 80vw;
+.overzichtpagina article p{
+	line-height: 1.5em;
+	margin-left: 1em;
 }
 
-.overzichtpagina article:nth-of-type(1) h2 {
-	position: absolute;
-	top: 11vh;
-	left: 5vw;
-	color: white;
+.overzichtpagina article>a{
+	margin-left: 1em;
+	padding-bottom: 1em;
 }
-
-.overzichtpagina article:nth-of-type(1) p:nth-of-type(1) {
-	position: absolute;
-	top: 9vh;
-	left: 5vw;
-	font-size: 0.6em;
-	color: white;
-}
-
-.overzichtpagina article:nth-of-type(1) p:nth-of-type(2) {
-	position: absolute;
-	top: 16vh;
-	left: 5vw;
-	font-size: 0.7em;
-	color: white;
-}
-
-.overzichtpagina article:nth-of-type(1) a:first-of-type {
-	top: 20vh;
-	left: 5vw;
-	font-size: 0.6em;
-	color: white;
-	position: absolute;
-}
-
-.overzichtpagina article:nth-of-type(1) a:nth-of-type(2) {
-	top: 22vh;
-	left: 5vw;
-	font-size: 0.6em;
-	color: white;
-	position: absolute;
-}
-
 
 
 /***************/
@@ -295,12 +653,32 @@ header>button {
 /***************/
 
 footer{
-	background-color: #F8F7F2;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: var(--footer-color);
+	margin-top: 4em;
 }
 
 footer>a{
 	display: flex;
-	justify-content: center;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	margin-left: 0.3em;
+}
+
+footer ul:nth-of-type(1){
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	padding-top: 0.5em;
+}
+
+footer>img{
+	display: flex;
+	width: 2em;
+	height: 2em;
+	align-self: center;
 }
 
 footer ul{
@@ -310,9 +688,31 @@ footer ul{
 	padding: 0em;
 }
 
+footer ul:nth-of-type(1) li{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer ul:nth-of-type(1) li img{
+	position: absolute;
+	right: 0.5em;
+	display: flex;
+	align-self: center;
+	width: 2em;
+	height: 2em;
+}
+
+footer ul:nth-of-type(1) li p{
+	display: flex;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin: 0.5em;
+}
+
 footer li{
 	margin: 0.5em;
-	
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 footer a {
@@ -320,9 +720,47 @@ footer a {
 	color: var(--color-text);
 }
 
-@media (max-width:42em) {
-	header>ul li {
-	  /* JOUW CODE HIER - stap 6 */
-	  display: none;
-	}
+footer>a {
+	text-decoration: underline;
+	font-weight: bold;
 }
+
+footer ul:nth-of-type(2){
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+	width: 95vw;
+	padding: 0em;
+}
+
+footer ul:nth-of-type(5) li a{
+	display: flex;
+	text-align: center;
+}
+
+/*scrollbar*/
+  ::-webkit-scrollbar{
+	height: 0.2em;
+	width: 0.2em;
+}
+::-webkit-scrollbar-thumb:horizontal{ /*bron: https://stackoverflow.com/questions/44334106/how-can-i-style-horizontal-scrollbar-by-css*/
+	background: var(--color-text);
+	border-radius: 1em;
+}
+
+::-webkit-scrollbar-thumb:vertical{
+	display: none;
+}
+
+/***************/
+/* BUTTON STATES */
+/***************/
+
+a:focus{
+	outline: dashed var(--color-text);
+}
+
+a:active{
+	color: var(--color-green-block);
+}
+
