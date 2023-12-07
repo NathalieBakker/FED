@@ -202,13 +202,14 @@ Screenreader test:
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  
   Ik heb uiteindelijk een medestudent die heel goed is in coderen om hulp gevraagd om mijn tekst en plaatjes op de juiste plek te krijgen. Hij zei dat ik de grid weer terug moest veranderen naar een flexbox. Ik heb alles toen weer veranderd naar de manier waarop ik het eerst had, zodat de plaatjes in ieder geval weer op de juiste plek stonden. Uiteindelijk bleek dat ik alleen was vergeten om mijn ul een position: relative te geven. Toen ik dit had gedaan stonden mijn teksten op de juiste plekken. 
 <img src="readme-images/tekst_scrollvak.png" width="375px" alt="Tekst op juiste plek in afbeeldingen van het scrollvak">
   
   Verder heb ik afgelopen maandag 04-12 mijn tweede website grotendeels gemaakt. Ik liep hierbij wel tegen wat kleine dingetjes aan, zoals elementen die niet naar de juiste plek wilden. Uiteindelijk heb ik dit gelukkig met de hulp van Donna op kunnen lossen. Ik had ook samen met haar gekeken naar mijn scrollbalken. Eerst wilde ik deze namelijk weghalen, maar zij vertelde me dat ik ze ook gewoon kon stylen. Dit had ze zelf ook nog nooit gedaan, maar we kwamen er gelukkig wel uit na even op Google te hebben gekeken.
 
   Ook ben ik deze week bezig geweest met het stylen van de focusstate van mijn buttons en links. Dit is het resultaat geworden.
-  <img src="readme-images/Focusstate.png" width="375px" alt="Tekst op juiste plek in afbeeldingen van het scrollvak">
+  <img src="readme-images/Focusstate.png" width="375px" alt="Focusstate bij links en buttons">
 
 
   ### Agenda voor meeting
