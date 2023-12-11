@@ -5,33 +5,34 @@
   box-sizing:border-box;  
 }
 
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#eee;
-	--menu-gradient:white;
+	--color-white-text: white;
+	--color-block-and-background:white;
+	--footer-color:#F8F7F2;
+	--color-yellow-block: rgba(242, 186, 65);
+	--color-green-block: #005349;
 }
+
 
 h1{
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.5em;
+	margin-top: 0em;
+	margin-left: 0.5em;
+	margin-bottom: 0.5em;
+	color: var(--color-text);
 }
 
 h2, h3, p, a{
 	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 0.5em;
+	color: var(--color-text);
 }
 
 ul{
@@ -39,8 +40,8 @@ ul{
 }
 
 header {
-	min-height:4em;
-	padding:0 1em;
+	min-height: 4em;
+	padding: 0.1em;
 	line-height:1;
 	
 	/* JOUW CODE HIER - stap 3 */
@@ -53,30 +54,51 @@ header {
   /* alle links in de header */
 header a {
 	padding:.5em 0;
-	color:var(--general-color);
 	text-decoration:none;
 }
 
-header>ul {
+header nav:nth-of-type(1) {
+	display: flex;
+}
+
+header nav:nth-of-type(1) ul {
 	display: flex;
 	flex-direction: row;
+	margin-left: 4em;
 }
 
 header ul li{
-	margin: 1em;
+	margin: 0.7em;
 	font-family: Arial, Helvetica, sans-serif;
+}
+
+header ul li button{
+	border-radius: 2em;
+	padding: 0.3em;
+	padding-left: 0.6em;
+	padding-right: 0.6em;
+	background-color: var(--color-text);
+	color: var(--color-white-text);
+}
+
+nav>img {
+	display: flex;
+	align-self: center;
+	width: 3.5em;
+	height: 2.5em;
+
 }
 
   /*********************/
 /* Hamburgermenu */
 /*********************/
-header>nav {
+header nav:nth-of-type(2) {
 	padding:1em;
 	
 	display:grid;
 	align-content:start;
 	gap:1em;
-	background-color:var(--menu-gradient);
+	background-color:var(--color-block-and-background);
 
 	position: fixed;
 	left: 0em;
@@ -86,37 +108,404 @@ header>nav {
 	translate: 100% 0%;
 }
 
-header>nav.toonMenu {
-	/* JOUW CODE HIER - stap 4 */
+header>nav:nth-of-type(2).toonMenu {
 	translate: 0% 0%;
 	transition: 0.3s;
 	justify-content: start;  
 }
 
-header>nav>button {
-	text-align: center;
-	align-content: center;
+header>nav:nth-of-type(2) {
+	justify-content: end;
 }
 
-header>nav>ul {
+header>nav:nth-of-type(2)>button {
+	display: flex;
+	justify-content: flex-start;
+	border: none;
+	background-color: var(--color-block-and-background);
+	margin-top: 0.7em;
+	margin-left: 0em;
+	padding: 0em;
+}
+
+header>nav:nth-of-type(2)>ul {
 	padding-left: 0;
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 /***************/
 /* MENU BUTTON */
 /***************/
-header>button {
+header>nav>button {
 	/* JOUW CODE HIER - stap 3 */
 	align-self: center;
 	order: -1;
+	border: none;
+	background-color: white;
   }
 
+  /***************/
+/* EERSTE BLOK DETAILPAGINA */
 /***************/
-/* TWEEDE TEKSTBLOK */
+
+article:nth-of-type(1){
+	display: flex;
+	flex-wrap: wrap;
+} 
+
+article h1{
+	margin-top: 0.8em;
+	display: flex;
+	flex-basis: 85%;
+}
+
+  /***************/
+/* Rok afbeelding */
+/***************/
+article>img:nth-of-type(1){
+	display: flex;
+	order: -1;
+	width: 100vw;
+}
+
+  /***************/
+/* Favorieten icoontje*/
+/***************/
+article>button:nth-of-type(1){
+	display: flex;
+	align-self: center;
+	border: none;
+	background-color: var(--color-block-and-background);
+	margin-top: 1em;
+}
+
+article>button:nth-of-type(1) img{
+	width: 2.5em;
+	height: 2.5em;
+}
+
+/* Rokkleur afbeelding */
+article img:nth-of-type(2){
+	display: flex;
+}
+
+/* Informatie icoontje met tekst */
+article figure{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	margin-top: 1em;
+	margin-left: 0.5em;
+}
+
+article figure img{
+	display: flex;
+	align-self: center;
+	width: 2.3em;
+	height: 4.3em;
+	background-color: var(--footer-color);
+	padding-top: 0.5em;
+	padding-bottom: 1.5em;	
+}
+
+article figcaption{
+	background-color: var(--footer-color);
+	padding: 1em;
+	width: 70vw;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Article vervolg*/
+article>p {
+	margin-top: 0em;
+}
+
+article:nth-of-type(1)>p:nth-of-type(1){
+	display: flex;
+	flex-basis: 30%;
+	font-size: 2em;
+	font-weight: bold;
+	margin-left: 0.4em;
+}
+
+article:nth-of-type(1) p:nth-of-type(2){
+	display: flex;
+	flex-basis: 60%;
+	font-size: small;
+	align-items: center;
+}
+
+article:nth-of-type(1) p:nth-of-type(3){
+	display: flex;
+	flex-basis: 100%;
+	margin-left: 0.8em;
+}
+
+article:nth-of-type(1) p:nth-of-type(4){
+	display: flex;
+	align-self: center;
+	font-size: 0.9em;
+	margin-top: 3em;
+	margin-bottom: 2em;
+	margin-left: 0.5em;
+}
+
+
+article:nth-of-type(1) p:nth-of-type(5){
+	display: flex;
+	flex-basis: 100%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+/* Meetlint icoontje */
+
+article img:nth-of-type(3){
+	display: flex;
+	align-self: center;
+	width: 2em;
+	height: 2em;
+	margin-left: 1em;
+	margin-top: 0.5em;
+}
+
+/* Vinkjes voor tekst detailpagina*/
+article>ul>li img{
+	display: flex;
+	align-self: flex-start;
+	width: 1em;
+	height: 1em;
+	margin-right: 0.5em;
+}
+
+/* Tekst naast vinkjes */
+article ul{
+	padding: 0.5em;
+}
+
+article ul li {
+	display: flex;
+	flex-basis: 40%;
+}
+
+article ul li p{
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+/* Link maattabel */
+article>a:nth-of-type(1){
+	color: var(--color-text);
+	font-weight: bold;
+	display: flex;
+	align-self: center;
+	margin-left: 0.3em;
+	margin-top: 1em;
+}
+
+/* Kies maat button */
+article button:nth-of-type(2){
+	background-color: var(--color-block-and-background);
+	border-radius: 2em;
+	width: 93vw;
+	padding: 1em;
+	font-size: 0.9em;
+	font-weight: bold;
+	margin: auto;
+	margin-bottom: 0.7em;
+}
+
+/* In het winkelmandje button */
+article button:nth-of-type(3){
+	background-color: var(--color-text);
+	border-radius: 2em;
+	width: 93vw;
+	padding: 1em;
+	font-size: 0.9em;
+	font-weight: bold;
+	margin: auto;
+	color: var(--color-block-and-background);
+}
+
+
+
+  /***************/
+/* SHOP THE LOOK BLOK DETAILPAGINA*/
+/***************/
+
+section ul{
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	justify-content: start;
+	align-self: start;
+	overflow: scroll;
+	padding: 0em;
+	margin-left: 0em;
+	margin-top: 0.5em;	
+}
+
+section li{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+section h2{
+	font-size: 2.5em;
+}
+
+section li>img{
+	width: 60vw;
+	margin-right: 0.5em;
+}
+
+section li button{
+	display: flex;
+	position: absolute;
+	top: 0.3em;
+	align-self: end;
+	border: none;
+	right: 0.6em;
+	background-color: #DFDEDA;
+}
+
+section li p{
+	margin-bottom: 0em;
+}
+
+
+  /***************/
+/* NAV ONDERAAN DETAILPAGINA */
+/***************/
+
+nav ol{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	white-space: nowrap;
+	overflow: scroll;
+	justify-content: center;
+	margin-top: 5em;
+	margin-bottom: 3em;
+}
+
+nav ol li:nth-of-type(1){
+	margin-left: 0.5em;
+}
+
+nav ol a{
+	text-decoration: none;
+	color: var(--color-text);
+}
+
+nav ol li{
+	display: flex;
+	flex-direction: row;
+}
+
+nav ol img{
+	display: flex;
+	width: 1em;
+	height: 2em;
+}
+
+
+/* BLOK NIEUWSBRIEF DETAILPAGINA */
+section>p:nth-of-type(1){
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+
+section>p:nth-of-type(2){
+	text-align: center;
+	margin-top: 0em;
+	margin-bottom: 3em;
+}
+
+form{
+	display: flex;
+	justify-content: center;
+}
+
+/*Bron voor lijn onder input veld: W3Schools Online HTML Editor. (z.d.). https://www.w3schools.com/css/tryit.asp?filename=trycss_form_border2*/
+form input{
+	outline: none;
+	border: none;
+	border-bottom: 0.1em solid var(--color-text);
+	width: 100%;
+}
+
+
+  /***************/
+/* EERSTE TEKSTBLOK OVERZICHTPAGINA */
+/***************/
+
+.overzichtpagina h1{
+	font-size: 2em;
+}
+
+.overzichtpagina article:nth-of-type(1) {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.overzichtpagina article:nth-of-type(1) img {
+	display: flex;
+	flex-grow: 1;
+	width: 80vw;
+}
+
+.overzichtpagina article:nth-of-type(1) h2 {
+	position: absolute;
+	top: 11vh;
+	left: 5vw;
+	color: var(--color-white-text);
+}
+
+.overzichtpagina article:nth-of-type(1) p:nth-of-type(1) {
+	position: absolute;
+	top: 9vh;
+	left: 7vw;
+	font-size: 0.6em;
+	color: var(--color-white-text);
+}
+
+.overzichtpagina article:nth-of-type(1) p:nth-of-type(2) {
+	position: absolute;
+	top: 17vh;
+	left: 5vw;
+	font-size: 0.7em;
+	color: var(--color-white-text);
+}
+
+.overzichtpagina article:nth-of-type(1) a:first-of-type {
+	top: 19vh;
+	left: 5vw;
+	font-size: 0.6em;
+	color: var(--color-white-text);
+	position: absolute;
+	text-decoration: underline;
+}
+
+.overzichtpagina article:nth-of-type(1) a:nth-of-type(2) {
+	top: 22vh;
+	left: 5vw;
+	font-size: 0.6em;
+	color: var(--color-white-text);
+	position: absolute;
+}
+
+
+/***************/
+/* TWEEDE TEKSTBLOK OVERZICHTPAGINA */
 /***************/
 
 .overzichtpagina article:nth-of-type(2){
-	background-color: rgba(242, 186, 65);
+	background-color: var(--color-yellow-block);
 	padding: 1em;
 	margin-top: 1em;
 	display: flex;
@@ -134,13 +523,13 @@ header>button {
 	margin-left: 1em;
 	margin-right: 1em;
 	margin-top: 2em;
-	font-size: 0.8em;
+	font-size: 1em;
 }
-
+ 
 .overzichtpagina article:nth-of-type(2)>a{
 	text-decoration: none;
-	color: white;
-	background-color: black;
+	color: var(--color-block-and-background);
+	background-color: var(--color-text);
 	padding: 0.8em;
 	padding-left: 1em;
 	padding-right: 1em;
@@ -151,143 +540,97 @@ header>button {
 
 .overzichtpagina article:nth-of-type(2)>p>a{
 	color: var(--color-text);
+	display: inline;
+	margin-left: 0em;
 }
 
+
 /***************/
-/* SECTION MET KERSTITEMS */
+/* SECTION MET KERSTITEMS OVERZICHTPAGINA */
 /***************/
 
 .overzichtpagina main>section:nth-of-type(2){
-	background-color: #005349;
+	background-color: var(--color-green-block);
 	padding-top: 0.2em;
 	margin-top: 1em;
 }
 
 .overzichtpagina main>section>h3{
-	color: white;
+	color: var(--color-white-text);
 	margin: 0.5em;
+	margin-left: 0.8em;
 	font-size: 1.5em;
 }
 
-.overzichtpagina main>section:nth-of-type(2){
-	display: grid;
-	grid-row-start: 1;
-	grid-row-end: 2;
-	grid-column-start: 1;
-	grid-column-end: 2;
-
+.overzichtpagina main>section ul {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	justify-content: start;
+	align-self: start;
+	overflow: scroll;
+	padding: 0em;
+	margin-left: 0.5em;
+	margin-top: 0.5em;	
 }
-
-.overzichtpagina main>section:nth-of-type(2) p {
-	position: absolute;
-}
-
-.overzichtpagina main>section:nth-of-type(2) > section:first-child{
-	display: grid;
-	grid-row-start: -1;
-	grid-row-end: 3;
-	grid-column-start: 2;
-	grid-column-end: 3;
-}
-
-.overzichtpagina main>section:nth-of-type(2) h3{
-	display: grid;
-	grid-row-start: 1;
-	grid-row-end: 2;
-	grid-column-start: 1;
-	grid-column-end: 2;
-
-	width: 100vw;
-}
-
 
 .overzichtpagina main>section ul li{
-	margin: 0.2em;
+	white-space: nowrap;
+	gap: 4em;
+	margin: 0.3em;
 	list-style: none;
 	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	width: auto ;
 }
 
 .overzichtpagina main>section ul li a {
 	text-decoration: none;
-	color: black;
+	color: var(--color-text);
 	font-size: 0.8em;
 }
 
-.overzichtpagina main>section ul li:nth-of-type(1) p {
+.overzichtpagina main>section ul li p {
 	position: absolute;
 	bottom: 7em;
-	left: 3em;
-	color: white;
+	left: 0;
+	right: 0;
+	color: var(--color-block-and-background);
 	font-weight: bold;
 	font-size: 1.2em;
+	text-align: center;
+
 }
 
 .overzichtpagina main>section ul li:nth-of-type(2) p {
 	position: absolute;
 	bottom: 7em;
+	left: 0;
 	right: 0;
-	margin-left: 5em;
-	color: white;
 	font-weight: bold;
 	font-size: 1.2em;
+	text-align: center;
 }
-
 
 
 /***************/
-/* EERSTE TEKSTBLOK */
+/* ARTICLE DAMESKLEDING OVERZICHTPAGINA */
 /***************/
-.overzichtpagina article:nth-of-type(1) {
-	display: flex;
-	flex-wrap: wrap;
-	position: relative;
+
+.overzichtpagina article h3{
+	font-size: 2em;
 }
 
-.overzichtpagina article:nth-of-type(1) img {
-	display: flex;
-	flex-grow: 1;
-	width: 80vw;
+.overzichtpagina article p{
+	line-height: 1.5em;
+	margin-left: 1em;
+	margin-right: 1em;
 }
 
-.overzichtpagina article:nth-of-type(1) h2 {
-	position: absolute;
-	top: 11vh;
-	left: 5vw;
-	color: white;
+.overzichtpagina article>a{
+	margin-left: 1em;
+	padding-bottom: 1em;
 }
-
-.overzichtpagina article:nth-of-type(1) p:nth-of-type(1) {
-	position: absolute;
-	top: 9vh;
-	left: 5vw;
-	font-size: 0.6em;
-	color: white;
-}
-
-.overzichtpagina article:nth-of-type(1) p:nth-of-type(2) {
-	position: absolute;
-	top: 16vh;
-	left: 5vw;
-	font-size: 0.7em;
-	color: white;
-}
-
-.overzichtpagina article:nth-of-type(1) a:first-of-type {
-	top: 20vh;
-	left: 5vw;
-	font-size: 0.6em;
-	color: white;
-	position: absolute;
-}
-
-.overzichtpagina article:nth-of-type(1) a:nth-of-type(2) {
-	top: 22vh;
-	left: 5vw;
-	font-size: 0.6em;
-	color: white;
-	position: absolute;
-}
-
 
 
 /***************/
@@ -295,12 +638,32 @@ header>button {
 /***************/
 
 footer{
-	background-color: #F8F7F2;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: var(--footer-color);
+	margin-top: 4em;
 }
 
 footer>a{
 	display: flex;
-	justify-content: center;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	margin-left: 0.3em;
+}
+
+footer ul:nth-of-type(1){
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	padding-top: 0.5em;
+}
+
+footer>img{
+	display: flex;
+	width: 2em;
+	height: 2em;
+	align-self: center;
 }
 
 footer ul{
@@ -310,9 +673,31 @@ footer ul{
 	padding: 0em;
 }
 
+footer ul:nth-of-type(1) li{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer ul:nth-of-type(1) li img{
+	position: absolute;
+	right: 0.5em;
+	display: flex;
+	align-self: center;
+	width: 2em;
+	height: 2em;
+}
+
+footer ul:nth-of-type(1) li p{
+	display: flex;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin: 0.5em;
+}
+
 footer li{
 	margin: 0.5em;
-	
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 footer a {
@@ -320,9 +705,252 @@ footer a {
 	color: var(--color-text);
 }
 
-@media (max-width:42em) {
-	header>ul li {
-	  /* JOUW CODE HIER - stap 6 */
-	  display: none;
+footer>a {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+footer ul:nth-of-type(2){
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+	width: 95vw;
+	padding: 0em;
+}
+
+footer ul:nth-of-type(5) li a{
+	display: flex;
+	text-align: center;
+}
+
+/*scrollbar*/
+  ::-webkit-scrollbar{
+	height: 0.2em;
+	width: 0.2em;
+}
+::-webkit-scrollbar-thumb:horizontal{ /*bron: How can I style horizontal Scrollbar by CSS? (z.d.). Stack Overflow. https://stackoverflow.com/questions/44334106/how-can-i-style-horizontal-scrollbar-by-css*/
+	background: var(--color-text);
+	border-radius: 1em;
+}
+
+::-webkit-scrollbar-thumb:vertical{
+	display: none;
+}
+
+/***************/
+/* BUTTON STATES */
+/***************/
+
+a:focus{
+	outline: dashed var(--color-text);
+}
+
+button:focus{
+	outline: dashed var(--color-text);;
+}
+
+.overzichtpagina article:nth-of-type(2)>a:hover{
+	background: repeating-conic-gradient(
+		from 45deg at 50% 75%,
+		black 0deg 10deg,
+		#472418 10deg 20deg,
+		var(--color-green-block) 20deg 30deg);
+	box-shadow: black 0.5em 0 1em;
+}
+
+article button:nth-of-type(2):focus{
+	outline: dashed var(--color-text);
+	background-color: var(--color-yellow-block);
+}
+
+article button:nth-of-type(2):hover{
+	background: repeating-radial-gradient(
+		var(--color-yellow-block),
+		white 0.7em,
+		yellow 1em,
+		orange 1.2em);
+	box-shadow: black 0.3em 0 1em;
+
+}
+
+article button:nth-of-type(3):focus {
+	outline: dashed var(--color-text);
+	background-color: var(--color-green-block);
+}
+
+article button:nth-of-type(3):hover{
+	background: linear-gradient(0deg, rgb(99, 95, 95) 0%, rgb(0, 0, 0) 100%);
+	}
+
+.overzichtpagina article:nth-of-type(2)>a:focus{
+	background-color: var(--color-green-block);
+}
+
+a:active{
+	color: var(--color-green-block);
+}
+
+/* code voor dark mode */
+@media (prefers-color-scheme:dark){
+	:root{
+		--color-text:#eee;
+		--color-block-and-background:#000000;
+		--footer-color: #545454;
+		--color-yellow-block: #472418;
+		--color-green-block: #005349;
+	}
+
+	header>nav:nth-of-type(2)>ul img{
+		filter: invert(1);
+	}
+
+	header>nav:nth-of-type(2)>button img{
+		filter: invert(1);
+	}
+
+	header nav:nth-of-type(1) img{
+		filter: invert(1);
+	}
+
+	header nav:nth-of-type(1) button{
+		background-color: var(--color-block-and-background);
+	}
+	
+	
+	footer{
+		margin-top: 0em;
+		padding-top: 4em;
+	}
+
+	footer ul:nth-of-type(1) img, footer ul:nth-of-type(3) img{
+		filter: invert(1);
+	}
+
+	footer ul:nth-of-type(2) img{
+		background-color: var(--color-text);
+	}
+
+	body, footer{
+		background-color: var(--color-block-and-background);
+
+	}
+
+	.overzichtpagina main>section ul li p  {
+		color: var(--color-text);
+	}
+
+	article figcaption, article figure img{
+		background-color: var(--color-text);
+	}
+
+	article img:nth-of-type(2){
+		margin-left: 0.5em;
+	}
+
+	article button:nth-of-type(2) {
+		border-color: var(--color-text);
+		color: var(--color-text);
+	}
+
+	article>ul>li img{
+		filter: invert(1);
+	}
+
+	form input{
+		padding: 1em;
+	}
+
+	article>button:nth-of-type(1){
+		background-color: var(--color-text);
+	}
+
+	.overzichtpagina article:nth-of-type(2)>a:hover{
+		background: -webkit-linear-gradient(0deg, white 0%, rgb(118, 118, 124) 100%);
+	}
+
+	a:focus{
+		outline: dashed var(--color-text);
+		color: rgba(242, 186, 65);
+	}
+
+
+	article button:nth-of-type(2):hover {
+		background: -webkit-linear-gradient(0deg, rgb(99, 95, 95) 0%, rgb(0, 0, 0) 100%);
+	}
+	
+	article button:nth-of-type(3):hover{
+		background: -webkit-linear-gradient(0deg, white 0%, rgb(118, 118, 124) 100%);
+	}
+	
+	article button:nth-of-type(3):focus {
+		outline: dashed var(--color-text);
+		color: var(--color-text);
+	}
+
+	section li button:focus{
+		outline: dashed var(--color-block-and-background)
+	}
+
+	.overzichtpagina article:nth-of-type(2)>a:focus{
+		color: var(--color-text);
 	}
 }
+
+/* Icoontjes in nav en footer laten ronddraaien */
+@keyframes ronddraaiende-icoontjes {
+	0% {
+		rotate: 0deg;
+	}
+	100% {
+		rotate: 360deg;
+	}
+  }
+  
+  header nav:nth-of-type(1) ul li a img:hover, footer ul:nth-of-type(3) li:hover {
+	animation-name: ronddraaiende-icoontjes;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+  }
+
+/* logo en favorietenicoontje inzoomen bij hoveren */
+  @keyframes logo-zoomen {
+	0% {
+	}
+	100% {
+	  scale: 2;
+	}
+  }
+
+  /* Bron attribute selector: CSS Hide all images with matching SRC attribute. (z.d.). Stack Overflow. https://stackoverflow.com/questions/6763899/css-hide-all-images-with-matching-src-attribute */
+  img[src*="CA_logo"]:hover, article>button:nth-of-type(1):hover {
+	animation-name: logo-zoomen;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+  }
+  
+/* plaatjes inzoomen bij hoveren */
+  @keyframes plaatjes {
+	0% {
+	}
+	100% {
+	  scale: 1.1;
+	}
+  }
+  
+  .overzichtpagina main>section ul li a:hover, section li>img:hover{	
+	animation-name: plaatjes;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+  }
+
+
+
+  
+ 
+
+
+
+  
