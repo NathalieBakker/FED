@@ -181,14 +181,15 @@ Screenreader test:
 ## Toegankelijkheidstest 2/2 (week 4)
 
 <details>
-  <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
+  <summary>uitwerken na test in <sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - De alt teksten zijn verbeterd, zodat het duidelijk is wat er gebeurt als je op een link klikt.
+  - De heading levels zijn op de juiste plekken gebruikt op de website.
+  - 
 
 </details>
-
-
 
 
 
@@ -249,19 +250,24 @@ Deze week heb ik me voornamelijk gefocust op de surface plane. Ik heb hiervoor d
 - Vormgegeven scrollbalken
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitkomst opdracht 1">
+  Eindresultaat van de overzichtspagina
+  <img src="readme-images/overzichtpagina.jpeg" width="375px" alt="eindresultaat overzichtspagina">
+
+  Eindresultaat van de detailpagina
+  <img src="readme-images/detailpagina.jpeg" width="375px" alt="eindresultaat detailpagina">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Het opmaken van de button met een repeating conic gradient en een box shadow ging goed en vond ik leuk om te doen. Het was handig dat we hier ook mee hebben geoefent in de les.
+  <img src="readme-images/button.png" width="375px" alt="button met repeating conic gradient">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik heb tijdens dit vak vooral geleerd om met flexbox te werken en om een uitklapmenu te maken. Voor dit vak vond ik werken met flexbox namelijk nog erg lastig en nu gaat dit veel beter. 
+  <img src="readme-images/uitklapmenu.png" width="375px" alt="uitklapmenu">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Ik vond het scrollvak erg lastig om te maken, omdat ik eerst niet goed wist hoe ik het scrollbaar kon maken. Vervolgens lukte het niet om de tekst op de juiste plek te krijgen. Uiteindelijk is het gelukkig toch gelukt met wat hulp.
+  <img src="readme-images/tekst_scrollvak.png" width="375px" alt="scrollvak">
 </details>
 
 
@@ -271,14 +277,9 @@ Deze week heb ik me voornamelijk gefocust op de surface plane. Ik heb hiervoor d
 ## Bronnenlijst
 
 <details open>
-  <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. W3Schools Online HTML Editor. (z.d.). https://www.w3schools.com/css/tryit.asp?filename=trycss_form_border2*/
+  2. How can I style horizontal Scrollbar by CSS? (z.d.). Stack Overflow. https://stackoverflow.com/questions/44334106/how-can-i-style-horizontal-scrollbar-by-css*/
+  3. CSS Hide all images with matching SRC attribute. (z.d.). Stack Overflow. https://stackoverflow.com/questions/6763899/css-hide-all-images-with-matching-src-attribute */
 
 </details>
