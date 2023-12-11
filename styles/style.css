@@ -5,15 +5,6 @@
   box-sizing:border-box;  
 }
 
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -27,28 +18,6 @@
 	--color-green-block: #005349;
 }
 
-@media (prefers-color-scheme:dark){
-	:root{
-		--color-text:#eee;
-		--color-block-and-background:#000000;
-		--footer-color: #545454;
-		--color-yellow-block: #472418;
-		--color-green-block: #005349;
-	}
-
-	h1{
-		padding-top: 0.5em;
-	}
-	
-	footer{
-		margin-top: 0em;
-		padding-top: 4em;
-	}
-}
-
-main, footer{
-	background-color: var(--color-block-and-background);
-}
 
 h1{
 	font-family: Arial, Helvetica, sans-serif;
@@ -95,12 +64,21 @@ header nav:nth-of-type(1) {
 header nav:nth-of-type(1) ul {
 	display: flex;
 	flex-direction: row;
-	margin-left: 2em;
+	margin-left: 4em;
 }
 
 header ul li{
-	margin: 1em;
+	margin: 0.7em;
 	font-family: Arial, Helvetica, sans-serif;
+}
+
+header ul li button{
+	border-radius: 2em;
+	padding: 0.3em;
+	padding-left: 0.6em;
+	padding-right: 0.6em;
+	background-color: var(--color-text);
+	color: var(--color-white-text);
 }
 
 nav>img {
@@ -142,11 +120,12 @@ header>nav:nth-of-type(2) {
 
 header>nav:nth-of-type(2)>button {
 	display: flex;
-	justify-content: end;
+	justify-content: flex-start;
 	border: none;
-	width: 90vw;
 	background-color: var(--color-block-and-background);
 	margin-top: 0.7em;
+	margin-left: 0em;
+	padding: 0em;
 }
 
 header>nav:nth-of-type(2)>ul {
@@ -291,7 +270,7 @@ article img:nth-of-type(3){
 	margin-top: 0.5em;
 }
 
-/* Vinkjes voor tekst */
+/* Vinkjes voor tekst detailpagina*/
 article>ul>li img{
 	display: flex;
 	align-self: flex-start;
@@ -300,6 +279,7 @@ article>ul>li img{
 	margin-right: 0.5em;
 }
 
+/* Tekst naast vinkjes */
 article ul{
 	padding: 0.5em;
 }
@@ -314,23 +294,19 @@ article ul li p{
 	margin-bottom: 1em;
 }
 
-article a{
-	display: flex;
-	align-self: center;
+/* Link maattabel */
+article>a:nth-of-type(1){
 	color: var(--color-text);
 	font-weight: bold;
-}
-
-article a:nth-of-type(1){
 	display: flex;
 	align-self: center;
 	margin-left: 0.3em;
 	margin-top: 1em;
 }
 
+/* Kies maat button */
 article button:nth-of-type(2){
 	background-color: var(--color-block-and-background);
-	color: var(--color-text);
 	border-radius: 2em;
 	width: 93vw;
 	padding: 1em;
@@ -340,17 +316,19 @@ article button:nth-of-type(2){
 	margin-bottom: 0.7em;
 }
 
+/* In het winkelmandje button */
 article button:nth-of-type(3){
 	background-color: var(--color-text);
-	color: var(--color-block-and-background);
 	border-radius: 2em;
 	width: 93vw;
 	padding: 1em;
 	font-size: 0.9em;
 	font-weight: bold;
 	margin: auto;
-	font-display: ;
+	color: var(--color-block-and-background);
 }
+
+
 
   /***************/
 /* SHOP THE LOOK BLOK DETAILPAGINA*/
@@ -386,15 +364,17 @@ section li>img{
 section li button{
 	display: flex;
 	position: absolute;
-	top: 0;
+	top: 0.3em;
 	align-self: end;
 	border: none;
-	right: 0.5em;
+	right: 0.6em;
+	background-color: #DFDEDA;
 }
 
 section li p{
 	margin-bottom: 0em;
 }
+
 
   /***************/
 /* NAV ONDERAAN DETAILPAGINA */
@@ -431,6 +411,7 @@ nav ol img{
 	height: 2em;
 }
 
+
 /* BLOK NIEUWSBRIEF DETAILPAGINA */
 section>p:nth-of-type(1){
 	font-size: 1.5em;
@@ -457,9 +438,11 @@ form input{
 	width: 100%;
 }
 
+
   /***************/
-/* EERSTE TEKSTBLOK OVERZICHTSPAGINA */
+/* EERSTE TEKSTBLOK OVERZICHTPAGINA */
 /***************/
+
 .overzichtpagina h1{
 	font-size: 2em;
 }
@@ -486,29 +469,30 @@ form input{
 .overzichtpagina article:nth-of-type(1) p:nth-of-type(1) {
 	position: absolute;
 	top: 9vh;
-	left: 5vw;
+	left: 7vw;
 	font-size: 0.6em;
 	color: var(--color-white-text);
 }
 
 .overzichtpagina article:nth-of-type(1) p:nth-of-type(2) {
 	position: absolute;
-	top: 20vh;
+	top: 17vh;
 	left: 5vw;
 	font-size: 0.7em;
 	color: var(--color-white-text);
 }
 
 .overzichtpagina article:nth-of-type(1) a:first-of-type {
-	top: 25vh;
+	top: 19vh;
 	left: 5vw;
 	font-size: 0.6em;
 	color: var(--color-white-text);
 	position: absolute;
+	text-decoration: underline;
 }
 
 .overzichtpagina article:nth-of-type(1) a:nth-of-type(2) {
-	top: 28vh;
+	top: 22vh;
 	left: 5vw;
 	font-size: 0.6em;
 	color: var(--color-white-text);
@@ -516,10 +500,8 @@ form input{
 }
 
 
-
-
 /***************/
-/* TWEEDE TEKSTBLOK OVERZICHTSPAGINA */
+/* TWEEDE TEKSTBLOK OVERZICHTPAGINA */
 /***************/
 
 .overzichtpagina article:nth-of-type(2){
@@ -559,10 +541,12 @@ form input{
 .overzichtpagina article:nth-of-type(2)>p>a{
 	color: var(--color-text);
 	display: inline;
+	margin-left: 0em;
 }
 
+
 /***************/
-/* SECTION MET KERSTITEMS OVERZICHTSPAGINA */
+/* SECTION MET KERSTITEMS OVERZICHTPAGINA */
 /***************/
 
 .overzichtpagina main>section:nth-of-type(2){
@@ -574,6 +558,7 @@ form input{
 .overzichtpagina main>section>h3{
 	color: var(--color-white-text);
 	margin: 0.5em;
+	margin-left: 0.8em;
 	font-size: 1.5em;
 }
 
@@ -622,12 +607,11 @@ form input{
 	bottom: 7em;
 	left: 0;
 	right: 0;
-	/* margin-left: 5em; */
-	color: var(--color-block-and-background);
 	font-weight: bold;
 	font-size: 1.2em;
 	text-align: center;
 }
+
 
 /***************/
 /* ARTICLE DAMESKLEDING OVERZICHTPAGINA */
@@ -640,6 +624,7 @@ form input{
 .overzichtpagina article p{
 	line-height: 1.5em;
 	margin-left: 1em;
+	margin-right: 1em;
 }
 
 .overzichtpagina article>a{
@@ -743,7 +728,7 @@ footer ul:nth-of-type(5) li a{
 	height: 0.2em;
 	width: 0.2em;
 }
-::-webkit-scrollbar-thumb:horizontal{ /*bron: https://stackoverflow.com/questions/44334106/how-can-i-style-horizontal-scrollbar-by-css*/
+::-webkit-scrollbar-thumb:horizontal{ /*bron: How can I style horizontal Scrollbar by CSS? (z.d.). Stack Overflow. https://stackoverflow.com/questions/44334106/how-can-i-style-horizontal-scrollbar-by-css*/
 	background: var(--color-text);
 	border-radius: 1em;
 }
@@ -760,7 +745,212 @@ a:focus{
 	outline: dashed var(--color-text);
 }
 
+button:focus{
+	outline: dashed var(--color-text);;
+}
+
+.overzichtpagina article:nth-of-type(2)>a:hover{
+	background: repeating-conic-gradient(
+		from 45deg at 50% 75%,
+		black 0deg 10deg,
+		#472418 10deg 20deg,
+		var(--color-green-block) 20deg 30deg);
+	box-shadow: black 0.5em 0 1em;
+}
+
+article button:nth-of-type(2):focus{
+	outline: dashed var(--color-text);
+	background-color: var(--color-yellow-block);
+}
+
+article button:nth-of-type(2):hover{
+	background: repeating-radial-gradient(
+		var(--color-yellow-block),
+		white 0.7em,
+		yellow 1em,
+		orange 1.2em);
+	box-shadow: black 0.3em 0 1em;
+
+}
+
+article button:nth-of-type(3):focus {
+	outline: dashed var(--color-text);
+	background-color: var(--color-green-block);
+}
+
+article button:nth-of-type(3):hover{
+	background: linear-gradient(0deg, rgb(99, 95, 95) 0%, rgb(0, 0, 0) 100%);
+	}
+
+.overzichtpagina article:nth-of-type(2)>a:focus{
+	background-color: var(--color-green-block);
+}
+
 a:active{
 	color: var(--color-green-block);
 }
 
+/* code voor dark mode */
+@media (prefers-color-scheme:dark){
+	:root{
+		--color-text:#eee;
+		--color-block-and-background:#000000;
+		--footer-color: #545454;
+		--color-yellow-block: #472418;
+		--color-green-block: #005349;
+	}
+
+	header>nav:nth-of-type(2)>ul img{
+		filter: invert(1);
+	}
+
+	header>nav:nth-of-type(2)>button img{
+		filter: invert(1);
+	}
+
+	header nav:nth-of-type(1) img{
+		filter: invert(1);
+	}
+
+	header nav:nth-of-type(1) button{
+		background-color: var(--color-block-and-background);
+	}
+	
+	
+	footer{
+		margin-top: 0em;
+		padding-top: 4em;
+	}
+
+	footer ul:nth-of-type(1) img, footer ul:nth-of-type(3) img{
+		filter: invert(1);
+	}
+
+	footer ul:nth-of-type(2) img{
+		background-color: var(--color-text);
+	}
+
+	body, footer{
+		background-color: var(--color-block-and-background);
+
+	}
+
+	.overzichtpagina main>section ul li p  {
+		color: var(--color-text);
+	}
+
+	article figcaption, article figure img{
+		background-color: var(--color-text);
+	}
+
+	article img:nth-of-type(2){
+		margin-left: 0.5em;
+	}
+
+	article button:nth-of-type(2) {
+		border-color: var(--color-text);
+		color: var(--color-text);
+	}
+
+	article>ul>li img{
+		filter: invert(1);
+	}
+
+	form input{
+		padding: 1em;
+	}
+
+	article>button:nth-of-type(1){
+		background-color: var(--color-text);
+	}
+
+	.overzichtpagina article:nth-of-type(2)>a:hover{
+		background: -webkit-linear-gradient(0deg, white 0%, rgb(118, 118, 124) 100%);
+	}
+
+	a:focus{
+		outline: dashed var(--color-text);
+		color: rgba(242, 186, 65);
+	}
+
+
+	article button:nth-of-type(2):hover {
+		background: -webkit-linear-gradient(0deg, rgb(99, 95, 95) 0%, rgb(0, 0, 0) 100%);
+	}
+	
+	article button:nth-of-type(3):hover{
+		background: -webkit-linear-gradient(0deg, white 0%, rgb(118, 118, 124) 100%);
+	}
+	
+	article button:nth-of-type(3):focus {
+		outline: dashed var(--color-text);
+		color: var(--color-text);
+	}
+
+	section li button:focus{
+		outline: dashed var(--color-block-and-background)
+	}
+
+	.overzichtpagina article:nth-of-type(2)>a:focus{
+		color: var(--color-text);
+	}
+}
+
+/* Icoontjes in nav en footer laten ronddraaien */
+@keyframes ronddraaiende-icoontjes {
+	0% {
+		rotate: 0deg;
+	}
+	100% {
+		rotate: 360deg;
+	}
+  }
+  
+  header nav:nth-of-type(1) ul li a img:hover, footer ul:nth-of-type(3) li:hover {
+	animation-name: ronddraaiende-icoontjes;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+  }
+
+/* logo en favorietenicoontje inzoomen bij hoveren */
+  @keyframes logo-zoomen {
+	0% {
+	}
+	100% {
+	  scale: 2;
+	}
+  }
+
+  /* Bron attribute selector: CSS Hide all images with matching SRC attribute. (z.d.). Stack Overflow. https://stackoverflow.com/questions/6763899/css-hide-all-images-with-matching-src-attribute */
+  img[src*="CA_logo"]:hover, article>button:nth-of-type(1):hover {
+	animation-name: logo-zoomen;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+  }
+  
+/* plaatjes inzoomen bij hoveren */
+  @keyframes plaatjes {
+	0% {
+	}
+	100% {
+	  scale: 1.1;
+	}
+  }
+  
+  .overzichtpagina main>section ul li a:hover, section li>img:hover{	
+	animation-name: plaatjes;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+  }
+
+
+
+  
+ 
+
+
+
+  
