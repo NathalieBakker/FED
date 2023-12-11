@@ -86,14 +86,14 @@ Screenreader test:
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/breakdown_damespagina.png" width="375px" alt="breakdown van de hele pagina">
-  <img src="readme-images/breakdown_detailpagina.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown_overzicht.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown_detail.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel slideshow: 
-  <img src="readme-images/breakdown_slideshow.png" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdown_slideshow.png" width="375px" alt="breakdown slideshow">
 
   ### dynamisch deel uitklapmenu: 
-  <img src="readme-images/breakdown_menu.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdown_menu.png" width="375px" alt="breakdown hamburgermenu">
 
 </details>
 
