@@ -93,7 +93,7 @@ Screenreader test:
   <img src="readme-images/breakdown_slideshow.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### dynamisch deel uitklapmenu: 
-  <img src="readme-images/breakdown_maten.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdown_menu.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
