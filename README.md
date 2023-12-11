@@ -168,7 +168,6 @@ Screenreader test:
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - Uiteindelijk hebben we de prioriteit gelegd bij het proberen te zorgen dat de tekst op de juiste plek in het scrollvak komt te staan. De student assistent zei dat ik mijn flexbox beter in een grid kon veranderen. Dit hadden we toen gedaan, maar het lukte niet om de plaatjes en teksten op de juiste plekken te krijgen. Toen het uur om was, stonden mijn tekst en plaatjes dus beide niet op de goede plek. 
 
@@ -186,8 +185,8 @@ Screenreader test:
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
   - De alt teksten zijn verbeterd, zodat het duidelijk is wat er gebeurt als je op een link klikt.
-  - De heading levels zijn op de juiste plekken gebruikt op de website.
-  - 
+  - De heading levels zijn op de juiste manier gebruikt.
+  - Alle afbeeldingen hebben nu een alt tekst die de afbeelding gedetailleerd beschrijft.
 
 </details>
 
@@ -199,7 +198,7 @@ Screenreader test:
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  hier dit ging goed & dit was lastig
   
   Omdat het niet lukte met het juist positioneren van de tekst in de plaatjes heb ik een medestudent die heel goed is in coderen om hulp gevraagd. Hij zei dat ik de grid weer terug moest veranderen naar een flexbox. Ik heb alles toen weer veranderd naar de manier waarop ik het eerst had, zodat de plaatjes in ieder geval weer op de juiste plek stonden. Uiteindelijk bleek dat ik alleen was vergeten om mijn ul een position: relative te geven. Toen ik dit had gedaan stonden mijn teksten op de juiste plekken. 
 <img src="readme-images/tekst_scrollvak.png" width="375px" alt="Tekst op juiste plek in afbeeldingen van het scrollvak">
@@ -221,7 +220,6 @@ Screenreader test:
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - Met de docent heb ik besproken wat de mogelijkheden waren voor de surface plane. Ik heb nu een goed beeld van wat ik wil doen voor de surface plane.
   - De docent vertelde me dat het niet zo erg is dat ik een figure heb gemaakt van het icoontje met de tekst. Wel vertelde hij dat een figure vaak eerder wordt gebruikt bij bijvoorbeeld statistieken.
@@ -251,22 +249,29 @@ Deze week heb ik me voornamelijk gefocust op de surface plane. Ik heb hiervoor d
 
   ### Je uitkomst - karakteristiek screenshots:
   Eindresultaat van de overzichtspagina
+  
   <img src="readme-images/overzichtpagina.jpeg" width="375px" alt="eindresultaat overzichtspagina">
 
+
   Eindresultaat van de detailpagina
+  
   <img src="readme-images/detailpagina.jpeg" width="375px" alt="eindresultaat detailpagina">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Het opmaken van de button met een repeating conic gradient en een box shadow ging goed en vond ik leuk om te doen. Het was handig dat we hier ook mee hebben geoefent in de les.
+  
   <img src="readme-images/button.png" width="375px" alt="button met repeating conic gradient">
 
-  Ik heb tijdens dit vak vooral geleerd om met flexbox te werken en om een uitklapmenu te maken. Voor dit vak vond ik werken met flexbox namelijk nog erg lastig en nu gaat dit veel beter. 
+
+  Ik heb tijdens dit vak vooral geleerd om met flexbox te werken en om een uitklapmenu te maken. Voor dit vak vond ik werken met flexbox namelijk nog erg lastig en nu gaat dit veel beter.
+  
   <img src="readme-images/uitklapmenu.png" width="375px" alt="uitklapmenu">
 
 
   ### Dit was lastig/Is niet gelukt:
   Ik vond het scrollvak erg lastig om te maken, omdat ik eerst niet goed wist hoe ik het scrollbaar kon maken. Vervolgens lukte het niet om de tekst op de juiste plek te krijgen. Uiteindelijk is het gelukkig toch gelukt met wat hulp.
+  
   <img src="readme-images/tekst_scrollvak.png" width="375px" alt="scrollvak">
 </details>
 
