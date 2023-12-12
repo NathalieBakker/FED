@@ -149,11 +149,11 @@ Screenreader test:
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
   Tijdens deze week ging het maken van het hamburgermenu in mijn eigen website best goed, aangezien ik hem werkend kreeg. Wel was er een plaatje wat over het menu heen ging. In de les heb ik toen aan de docent gevraag hoe ik het plaatje naar achteren moest krijgen. Dit bleek met z-index te moeten. Nu moet ik nog zorgen dat het menu knopje het C&A logo is i.p.v. een knopje met menu erin. 
-   <img src="Schermafbeelding_hamburgermenu.png" width="375px" alt="Hamburgermenu">
-   <img src="hamburgermenu_uitklap.png" width="375px" alt="Hamburgermenu uitgeklapt">
+   <img src="readme-images/Schermafbeelding_hamburgermenu.png" width="375px" alt="Hamburgermenu">
+   <img src="readme-images/hamburgermenu_uitklap.png" width="375px" alt="Hamburgermenu uitgeklapt">
    
   Ik wilde ook graag mijn plaatjes scrollbaar maken. Dit lukte me alleen nog niet tot dusver. Ik heb daarom in de les aan Donna gevraagd hoe ik dit het beste kan doen. Na haar tips was het me gelukkig wel gelukt. Later was ik ook nog bezig met het plaatsen van de tekst voor de plaatjes. Bij het eerste plaatje was dit me gelukt. Bij het tweede plaatje wilde de tekst helaas niet verder naar rechts dan het scherm breed was. Dit wil ik tijdens het voortgangsgesprek graag bespreken met 1 van de assistenten.
-   <img src="Schermafbeelding_scroll.png" width="375px" alt="HTML structuur">
+   <img src="readme-images/Schermafbeelding_scroll.png" width="375px" alt="HTML structuur">
 
 
   ### Agenda voor meeting
