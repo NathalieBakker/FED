@@ -203,6 +203,7 @@ Overige bevindingen:
   - Het contrast van beide pagina's is goed volgens de contrast checker.
 
 WCAG checklist
+
   <img src="readme-images/wcag1.png" width="375px" alt="Focusstate bij links en buttons">
   <img src="readme-images/wcag2.png" width="375px" alt="Focusstate bij links en buttons">
   <img src="readme-images/wcag3.png" width="375px" alt="Focusstate bij links en buttons">
