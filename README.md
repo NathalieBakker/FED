@@ -187,6 +187,19 @@ Screenreader test:
   - De alt teksten zijn verbeterd, zodat het duidelijk is wat er gebeurt als je op een link klikt.
   - De heading levels zijn op de juiste manier gebruikt.
   - Alle afbeeldingen hebben nu een alt tekst die de afbeelding gedetailleerd beschrijft.
+  - Er is een Aria hidden gebruikt voor het hamburgermenu, zodat deze niet wordt opgelezen door de screenreader.
+  - Er is een dark mode gemaakt, zodat bezoekers van de site zelf kunnen bepalen in welke mode ze de website willen bekijken.
+  - De sluitknop in het hamburgermenu is naar links verplaatst, zodat het menu makkelijk weg te klikken is. Het menu zelf wordt namelijk op diezelfde plek geopend, dus dan hoeft de gebruiker niet eerst weer met zijn/haar muis naar rechts om het menu te sluiten.
+  - De focus state van de buttons is duidelijk verbeterd, want bij de C&A website is bij tabben bijna niet te zien wanneer je op een button staat.
+  - De hover state van de buttons is duidelijk verbeterd, omdat de buttons een andere kleur krijgen wanneer er overheen wordt gehoverd. Bij de C&A website was bijna geen verschil te zien bij het hoveren over een button.
+  - Bij de links onder het scrollvak op de detailpagina is bij tabben een verandering in de kleur van de link te zien. Dit maakt het duidelijker welke link geselecteerd is.
+
+WCAG checklist
+  <img src="readme-images/wcag1.png" width="375px" alt="Focusstate bij links en buttons">
+  <img src="readme-images/wcag2.png" width="375px" alt="Focusstate bij links en buttons">
+  <img src="readme-images/wcag3.png" width="375px" alt="Focusstate bij links en buttons">
+  <img src="readme-images/wcag4.png" width="375px" alt="Focusstate bij links en buttons">
+  <img src="readme-images/wcag5.png" width="375px" alt="Focusstate bij links en buttons">
 
 </details>
 
