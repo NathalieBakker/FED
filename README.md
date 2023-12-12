@@ -71,7 +71,7 @@ Screenreader test:
 - Bij dames pagina van heading level 1 naar 3 naar 2, geen logische structuur
 - Bij dames pagina staat niet beschreven wat link van www.c-a.com/foryou is
 - Bij links nu ontdekken en nu shoppen, weet je niet waar je naartoe wordt geleid.
-- Er wordt te veel informatie opgelezen bij andere productlinks op detailpagina.
+- Er wordt te veel informatie opgelezen bij productlinks op de detailpagina.
 - Koppeling wordt vaak meerdere keren opgelezen
 
 Overige bevindingen:
