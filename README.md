@@ -108,12 +108,10 @@ Overige bevindingen:
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
     Op onderstaande afbeelding is te zien hoe mijn HTML structuur er uit zag.
     <img src="readme-images/html_structuur.jpeg" width="375px" alt="HTML structuur">
-  
-    Op onderstaande afbeelding is te zien hoe ik heb geoefend met typografie.
-    
     <img src="readme-images/oefening_tekst.png" width="375px" alt="Oefening tekst">
 
-
+    Op bovenstaande afbeelding is te zien hoe ik heb geoefend met typografie.
+  
 
   ### Stand van zaken
   Deze week ben ik begonnen met het maken van de basis van mijn HTML. Dit ging best goed volgens mij. Ik vond het af en toe wel lastig om te bepalen of iets een section of een article was. 
