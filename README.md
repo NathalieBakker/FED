@@ -100,7 +100,6 @@ Screenreader test:
 
 
 
-
 ## Voortgang 1 (week 2)
 
 <details>
@@ -110,7 +109,7 @@ Screenreader test:
   
     Op onderstaande afbeelding is te zien hoe ik heb geoefend met typografie.
     
-    <img src="readme-images/oefening_tekst.png" width="375px" alt="HTML structuur">
+    <img src="readme-images/oefening_tekst.png" width="375px" alt="Oefening tekst">
 
 
 
@@ -154,8 +153,8 @@ Screenreader test:
    <img src="readme-images/hamburgermenu_uitklap.png" width="375px" alt="Hamburgermenu uitgeklapt">
 
   Ik wilde ook graag mijn plaatjes scrollbaar maken. Dit lukte me alleen nog niet tot dusver. Ik heb daarom in de les aan Donna gevraagd hoe ik dit het beste kan doen. Na haar tips was het me gelukkig wel gelukt. Later was ik ook nog bezig met het plaatsen van de tekst voor de plaatjes. Bij het eerste plaatje was dit me gelukt. Bij het tweede plaatje wilde de tekst helaas niet verder naar rechts dan het scherm breed was. Dit wil ik tijdens het voortgangsgesprek graag bespreken met 1 van de assistenten. 
+  <img src="readme-images/schermafbeelding_tekst.png" width="375px" alt="Tekst op verkeerde plek in vak">
 
-      <img src="readme-images/schermafbeelding_tekst.png" width="300px" alt="Tekst verkeerd in vak ">
 
  
 
