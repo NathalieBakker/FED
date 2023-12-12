@@ -68,7 +68,7 @@ Test met combined loss diabetic eye disease bril
 - Wat grotere teksten zijn wel goed te lezen.
 - Plaatjes zijn redelijk goed te zien.
 - Lastig om details te zien.
-- Ze moet haar hoofd steeds draaien om de content goed te kunnen zien.
+- Ze moet haar hoofd steeds draaien om de site te kunnen zien door de vlekken op de bril.
 
 Screenreader test: 
 - Bij dames pagina van heading level 1 naar 3 naar 2, geen logische structuur
@@ -76,6 +76,12 @@ Screenreader test:
 - Bij links nu ontdekken en nu shoppen, weet je niet waar je naartoe wordt geleid.
 - Er wordt te veel informatie opgelezen bij andere productlinks op detailpagina.
 - Koppeling wordt vaak meerdere keren opgelezen
+
+Overige bevindingen:
+- De hover states en focus states zijn niet goed vormgegeven. Het is namelijk bijna niet te zien wanneer je over een button heen hovered of op een button focust door tabben.
+- De sluitknop in het hamburgermenu zit rechts, wat geen handige plek is aangezien de knop om het menu te openen links zit.
+- De website heeft geen dark mode.
+- De focus state bij de links is niet zo duidelijk, omdat er alleen een klein kringetje omheen komt te staan.
 </details>
 
 
@@ -96,7 +102,6 @@ Screenreader test:
   <img src="readme-images/breakdown_menu.png" width="375px" alt="breakdown hamburgermenu">
 
 </details>
-
 
 
 
@@ -195,6 +200,7 @@ Screenreader test:
   - De focus state van de buttons is duidelijk verbeterd, want bij de C&A website is bij tabben bijna niet te zien wanneer je op een button staat.
   - De hover state van de buttons is duidelijk verbeterd, omdat de buttons een andere kleur krijgen wanneer er overheen wordt gehoverd. Bij de C&A website was bijna geen verschil te zien bij het hoveren over een button.
   - Bij de links onder het scrollvak op de detailpagina is bij tabben een verandering in de kleur van de link te zien. Dit maakt het duidelijker welke link geselecteerd is.
+  - Het contrast van beide pagina's is goed volgens de contrast checker.
 
 WCAG checklist
   <img src="readme-images/wcag1.png" width="375px" alt="Focusstate bij links en buttons">
