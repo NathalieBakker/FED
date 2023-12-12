@@ -153,7 +153,7 @@ Screenreader test:
    <img src="readme-images/hamburgermenu_uitklap.png" width="375px" alt="Hamburgermenu uitgeklapt">
    
   Ik wilde ook graag mijn plaatjes scrollbaar maken. Dit lukte me alleen nog niet tot dusver. Ik heb daarom in de les aan Donna gevraagd hoe ik dit het beste kan doen. Na haar tips was het me gelukkig wel gelukt. Later was ik ook nog bezig met het plaatsen van de tekst voor de plaatjes. Bij het eerste plaatje was dit me gelukt. Bij het tweede plaatje wilde de tekst helaas niet verder naar rechts dan het scherm breed was. Dit wil ik tijdens het voortgangsgesprek graag bespreken met 1 van de assistenten.
-  <img src="readme-images/Schermafbeelding_scroll.png" width="375px" alt="Scrollvak met tekst op verkeerde plek">
+https://github.com/NathalieBakker/FED/blob/main/readme-images/Schermafbeelding_scroll.png
 
 
   ### Agenda voor meeting
